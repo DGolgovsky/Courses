@@ -1,0 +1,20 @@
+Files:
+    open, read, write, creat, close
+    man 2
+
+Directories:
+DIR *dir
+struct dirent *entry;
+dir = DIR * opendir(const char *name);
+dir = DIR * fdopendir(int fd); // <dirent.h>
+
+while ((dirent = readdir(dir)) != NULL) {
+    //do something with dirent
+}
+man 3 readdir
+
+int closedir(DIR *);
+
+Files:
+stat file_name
+

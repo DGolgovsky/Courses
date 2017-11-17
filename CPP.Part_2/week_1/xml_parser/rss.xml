@@ -1,0 +1,2336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Newest questions tagged c++ - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/tag?tagnames=c%2b%2b&amp;sort=newest" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions/tagged/?tagnames=c%2b%2b&amp;sort=newest" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2017-10-30T09:05:22Z</updated>
+    <id>https://stackoverflow.com/feeds/tag?tagnames=c%2b%2b&amp;sort=newest</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/47011210</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Id returned 1 exit status Dev C++</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="compiler-errors" />
+        <author>
+            <name>user8596293</name>
+            <uri>https://stackoverflow.com/users/8596293</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47011210/id-returned-1-exit-status-dev-c" />
+        <published>2017-10-30T08:55:29Z</published>
+        <updated>2017-10-30T08:55:29Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I had a problem with finish compiling my program.
+I can only edit, compile and then run it for only one time.After that,
+whenever I compile my program it appears the following message&quot; Cannot open output file&quot; and &quot;[Error] Id returned 1 exit status.&quot; I have looked up on the website and it suggests that I should completely close the console window and also close the process from task manager. I did properly close the console window but I&#39;m not able to find the process running in the background or task manager. I found that the .exe file after the compilation cannot be deleted nor executed. The only solution I found now is to shut down my computer and reboot it. Can anyone plz tell me how to solve this problem.
+Btw, I&#39;m using Dev C++ 5.1.1 compiler.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47011095</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">GALIB 242 open source software written in C++ for genetic algorithms - linker errors</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="genetic-algorithm" />
+        <author>
+            <name>Mr. Prasad</name>
+            <uri>https://stackoverflow.com/users/6659717</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47011095/galib-242-open-source-software-written-in-c-for-genetic-algorithms-linker-er" />
+        <published>2017-10-30T08:49:39Z</published>
+        <updated>2017-10-30T08:59:18Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/56RS7.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I downloaded the GALIB 242 open source software developed by MIT( coded in C++ language for a variety of genetic algorithms), and tried to run on a TurboC7 IDE. I was successful in compiling the program(i.e., no errors in compiling). but around 9 linker errors i got when i tried to run the program EX1.cpp of GALIB242 software. I am attaching the screenshot of the error message &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47011035</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">boost file system issue in c++ windows universal application</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="c++-cli" />
+            <category scheme="https://stackoverflow.com/tags" term="c++-winrt" />
+        <author>
+            <name>sohel14_cse_ju</name>
+            <uri>https://stackoverflow.com/users/696219</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47011035/boost-file-system-issue-in-c-windows-universal-application" />
+        <published>2017-10-30T08:46:41Z</published>
+        <updated>2017-10-30T08:56:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am working with c++/winrt. I have to use boost filesytem. But looks like the keyword &quot;generic&quot; in boost and winrt are conflicting. Is there any way to get rid if it? Or we can&#39;t use boost on winrt?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;error C2059: syntax error: &#39;generic&#39;
+error C2334: unexpected token(s) preceding &#39;{&#39;; skipping apparent function body
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010997</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">fatal error LNK1107: invalid or corrupt file: cannot read at 0x21E00D</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="sass" />
+            <category scheme="https://stackoverflow.com/tags" term="nodes" />
+            <category scheme="https://stackoverflow.com/tags" term="node-gyp" />
+            <category scheme="https://stackoverflow.com/tags" term="gyp" />
+        <author>
+            <name>Ogbonna Vitalis</name>
+            <uri>https://stackoverflow.com/users/6806662</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010997/fatal-error-lnk1107-invalid-or-corrupt-file-cannot-read-at-0x21e00d" />
+        <published>2017-10-30T08:43:19Z</published>
+        <updated>2017-10-30T08:51:12Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am new to node,
+I have node version 8.6. Whenever I try to build this particular app which I cloned from git which a tutorial tutor built and his was working, I get this error. I have tried all I can think of but this error persist whenever I run the npm install command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C:\Users\Ogbonna Vitalis Pc\.node-gyp\8.6.0\x64\node.lib : fatal error LNK1107: invalid or corrupt file: cannot read at
+ 0x21E00D [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj]
+Done Building Project &quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj&quot; (default t
+argets) -- FAILED.
+
+Done Building Project &quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj.metaproj&quot; (
+default targets) -- FAILED.
+
+Done Building Project &quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.sln&quot; (default targe
+ts) -- FAILED.
+
+
+Build FAILED.
+
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.sln&quot; (default target) (1) -&amp;gt;
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj.metaproj&quot; (default target) (2) -&amp;gt;
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\src\libsass.vcxproj&quot; (default target) (3) -&amp;gt;
+(ClCompile target) -&amp;gt;
+  cl : Command line warning D9025: overriding &#39;/GR-&#39; with &#39;/GR&#39; [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\n
+ode-sass\build\src\libsass.vcxproj]
+  cl : Command line warning D9025: overriding &#39;/GR-&#39; with &#39;/GR&#39; [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\n
+ode-sass\build\src\libsass.vcxproj]
+  cl : Command line warning D9025: overriding &#39;/GR-&#39; with &#39;/GR&#39; [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\n
+ode-sass\build\src\libsass.vcxproj]
+  cl : Command line warning D9025: overriding &#39;/GR-&#39; with &#39;/GR&#39; [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\n
+ode-sass\build\src\libsass.vcxproj]
+  cl : Command line warning D9025: overriding &#39;/GR-&#39; with &#39;/GR&#39; [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\n
+ode-sass\build\src\libsass.vcxproj]
+  ..\..\src\libsass\src\json.cpp(26): warning C4005: &#39;_CRT_NONSTDC_NO_DEPRECATE&#39;: macro redefinition [C:\xampp\htdocs\n
+odejs\offlineweb\wittr\node_modules\node-sass\build\src\libsass.vcxproj]
+  ..\..\src\libsass\src\sass2scss.cpp(9): warning C4005: &#39;_CRT_NONSTDC_NO_DEPRECATE&#39;: macro redefinition [C:\xampp\htdo
+cs\nodejs\offlineweb\wittr\node_modules\node-sass\build\src\libsass.vcxproj]
+  cl : Command line warning D9025: overriding &#39;/GR-&#39; with &#39;/GR&#39; [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\n
+ode-sass\build\src\libsass.vcxproj]
+
+
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.sln&quot; (default target) (1) -&amp;gt;
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj.metaproj&quot; (default target) (2) -&amp;gt;
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj&quot; (default target) (4) -&amp;gt;
+  ..\src\binding.cpp(140): warning C4244: &#39;argument&#39;: conversion from &#39;size_t&#39; to &#39;double&#39;, possible loss of data [C:\x
+ampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj]
+  c:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\nan\nan_new.h(208): warning C4244: &#39;argument&#39;: conversion from &#39;
+size_t&#39; to &#39;double&#39;, possible loss of data (compiling source file ..\src\sass_types\list.cpp) [C:\xampp\htdocs\nodejs\o
+fflineweb\wittr\node_modules\node-sass\build\binding.vcxproj]
+  c:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\nan\nan_new.h(208): warning C4244: &#39;argument&#39;: conversion from &#39;
+size_t&#39; to &#39;double&#39;, possible loss of data (compiling source file ..\src\sass_types\map.cpp) [C:\xampp\htdocs\nodejs\of
+flineweb\wittr\node_modules\node-sass\build\binding.vcxproj]
+
+
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.sln&quot; (default target) (1) -&amp;gt;
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj.metaproj&quot; (default target) (2) -&amp;gt;
+&quot;C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj&quot; (default target) (4) -&amp;gt;
+(Link target) -&amp;gt;
+  C:\Users\Ogbonna Vitalis Pc\.node-gyp\8.6.0\x64\node.lib : fatal error LNK1107: invalid or corrupt file: cannot read
+at 0x21E00D [C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass\build\binding.vcxproj]
+
+    11 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:04:58.47
+gyp ERR! build error
+gyp ERR! stack Error: `C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe` failed with exit code: 1
+gyp ERR! stack     at ChildProcess.onExit (C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-gyp\lib\build.js:258:23)
+gyp ERR! stack     at emitTwo (events.js:125:13)
+gyp ERR! stack     at ChildProcess.emit (events.js:213:7)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:200:12)
+gyp ERR! System Windows_NT 10.0.14393
+gyp ERR! command &quot;C:\\Program Files\\nodejs\\node.exe&quot; &quot;C:\\xampp\\htdocs\\nodejs\\offlineweb\\wittr\\node_modules\\node-gyp\\bin\\node-gyp.js&quot; &quot;rebuild&quot; &quot;--verbose&quot; &quot;--libsass_ext=&quot; &quot;--libsass_cflags=&quot; &quot;--libsass_ldflags=&quot; &quot;--libsass_library=&quot;
+gyp ERR! cwd C:\xampp\htdocs\nodejs\offlineweb\wittr\node_modules\node-sass
+gyp ERR! node -v v8.6.0
+gyp ERR! node-gyp -v v3.6.2
+gyp ERR! not ok
+Build failed with error code: 1
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.2: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: bufferutil@1.2.1 (node_modules\bufferutil):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: bufferutil@1.2.1 install: `node-gyp rebuild`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: utf-8-validate@1.2.2 (node_modules\utf-8-validate):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: utf-8-validate@1.2.2 install: `node-gyp rebuild`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! node-sass@3.13.1 postinstall: `node scripts/build.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the node-sass@3.13.1 postinstall script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ogbonna Vitalis Pc\AppData\Roaming\npm-cache\_logs\2017-10-29T22_55_33_341Z-debug.log
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pls your suggestions will highly be appreciated. Thanks in advance.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010987</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Inheritance &amp; Classes in C++</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="class" />
+            <category scheme="https://stackoverflow.com/tags" term="inheritance" />
+        <author>
+            <name>Sean Paul</name>
+            <uri>https://stackoverflow.com/users/8800383</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010987/inheritance-classes-in-c" />
+        <published>2017-10-30T08:42:43Z</published>
+        <updated>2017-10-30T08:42:43Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I don&#39;t understand this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Employee { 
+       public:   
+          Employee(string name, float payRate); 
+          string getName();   
+          float getPayRate(); 
+          float pay(float hoursWorked); 
+       protected:   
+          string name;   
+          float payRate; 
+}; 
+class Manager : public Employee { 
+       public:   
+          Manager(string theName, float thePayRate, bool isSalaried); 
+          bool getSalaried() const; 
+          float pay(float hoursWorked) const; 
+       private:   
+          bool salaried; 
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Suppose the pay() method has been declared virtual in Employee. And, we add a printPay() method to the Employee class:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void Employee::printPay(float hoursWorked) const 
+{  
+    cout &amp;lt;&amp;lt; &quot;Pay: &quot; &amp;lt;&amp;lt; pay(hoursWorked) &amp;lt;&amp;lt; endl; 
+} 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which gets inherited in Manager without being overridden.  &lt;/p&gt;
+
+&lt;p&gt;Which version of pay() will be called within printPay() for a Manager when mgr object calls printPay(). Explain your answer. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Manager mgr; 
+mgr.printPay(40.0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the answer provided:&lt;/p&gt;
+
+&lt;p&gt;The Manager version of pay() gets called inside of printPay() even though printPay() was only defined in Employee!  Why? Remember that:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void Employee::printPay(float hoursWorked) const 
+{   
+    ... pay(hoursWorked) ... 
+} 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;is really shorthand for:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void Employee::printPay(float hoursWorked) const 
+{   
+    ... this-&amp;gt;pay(hoursWorked) ... 
+} 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What does that even mean? Why isn&#39;t the answer polymorphism. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010969</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Function to validate a string of numbers for uniqueness</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="function" />
+            <category scheme="https://stackoverflow.com/tags" term="validation" />
+        <author>
+            <name>civilvyz</name>
+            <uri>https://stackoverflow.com/users/8855118</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010969/function-to-validate-a-string-of-numbers-for-uniqueness" />
+        <published>2017-10-30T08:41:06Z</published>
+        <updated>2017-10-30T08:52:59Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;OK, I need to get this working for school tomorrow in 8 hours! This code is supposed to crack a locker combo starting with combo[6] is 9; after wards there are some validations to lead to the other digits. &lt;/p&gt;
+
+&lt;p&gt;I can&#39;t get this validation function to work, I need to make sure all 6 digits are unique. And I need to get it iterating through the entire combination more than once.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/*
+
+*/
+
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+#include&amp;lt;string&amp;gt;
+
+using namespace std;
+
+string lockerCombo = &quot;000009&quot;;
+string twoOneCheck;
+
+bool lockerComboValid(string combo);
+
+bool lockerComboValid(string combo){
+    int j = combo.length();
+    for (int i = 0; i &amp;lt; combo.length(); i++)
+    {   
+            j--;
+            if(combo[i] != combo[j])
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+    }
+}
+
+int main()
+{
+
+   do{
+    //~ for(int k = 0; k &amp;lt; 10; k++)
+    //~ {
+        //~ to_string(k);
+        lockerCombo[1] ++;
+        for(int i = 0; i &amp;lt; 10; i++)
+        {
+            to_string(i);
+            lockerCombo[3] = 48 + i;
+            if ((int)lockerCombo[1] - (int)lockerCombo[3] == 6)
+            break;
+            }
+            //~ if ((int)lockerCombo[1] - (int)lockerCombo[3] == 6)
+            //~ break;
+
+            for(int o = 0; o &amp;lt; 10; o++)
+            {
+                to_string(o);
+                lockerCombo[4] = 48 + o;
+                for(int p = 0; p &amp;lt; 10; p++)
+                {
+                    to_string(p);
+                    lockerCombo[0] = 48 + p;
+                    if(((int)lockerCombo[0] - 48) + ((int)lockerCombo[1] - 48) == 3 * (lockerCombo[4] - 48))
+                    break;
+                }
+                if(((int)lockerCombo[0] - 48) + ((int)lockerCombo[1] - 48) == 3 * (lockerCombo[4] - 48))
+                break;
+            }
+
+    //~ }
+    int testCombo;
+    testCombo = (lockerCombo[1]-48) + (lockerCombo[2]-48);
+    lockerCombo[3] = (testCombo/9)+48;
+
+
+  }while(lockerComboValid(lockerCombo) == false);
+  cout &amp;lt;&amp;lt; &quot;The Combo is - &quot; &amp;lt;&amp;lt; lockerCombo;
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010964</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Accessing ListView&#39;s data in exe program by external wrapper program</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="memory" />
+        <author>
+            <name>doliolarzz</name>
+            <uri>https://stackoverflow.com/users/5638494</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010964/accessing-listviews-data-in-exe-program-by-external-wrapper-program" />
+        <published>2017-10-30T08:40:50Z</published>
+        <updated>2017-10-30T08:40:50Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a c++ exe program I do not own the source and I want to access some data which is in the ListView. Is there any way to do this?
+(My best guess is using memory address but how to know the format of ListView)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/88flt.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;Image of the program&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010701</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Why does enable_if not behave as expected?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="templates" />
+            <category scheme="https://stackoverflow.com/tags" term="c++14" />
+            <category scheme="https://stackoverflow.com/tags" term="typetraits" />
+        <author>
+            <name>abraham_hilbert</name>
+            <uri>https://stackoverflow.com/users/7006673</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010701/why-does-enable-if-not-behave-as-expected" />
+        <published>2017-10-30T08:20:50Z</published>
+        <updated>2017-10-30T08:49:25Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Can someone please help me to understand why the following code &lt;/p&gt;
+
+&lt;p&gt;1) does not cause an &lt;code&gt;error: redefinition of &#39;foo&#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2) why it outputs &lt;code&gt;T&lt;/code&gt; and not &lt;code&gt;A&amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;type_traits&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+
+class A{};
+
+template&amp;lt; typename T &amp;gt;
+void foo( T&amp;amp;&amp;amp; )
+{
+   std::cout &amp;lt;&amp;lt; &quot;T&quot; &amp;lt;&amp;lt; std::endl;
+}
+
+template&amp;lt; typename A_t, std::enable_if_t&amp;lt; std::is_same&amp;lt;A_t, A&amp;amp;&amp;gt;::type &amp;gt; &amp;gt;
+void foo( A_t&amp;amp;&amp;amp; )
+{
+   std::cout &amp;lt;&amp;lt; &quot;A&amp;amp;&quot; &amp;lt;&amp;lt; std::endl;
+}
+
+template&amp;lt; typename A_t, std::enable_if_t&amp;lt; std::is_same&amp;lt;A_t, A&amp;gt;::type &amp;gt; &amp;gt;
+void foo( A_t&amp;amp;&amp;amp; )
+{
+   std::cout &amp;lt;&amp;lt; &quot;A&quot; &amp;lt;&amp;lt; std::endl;
+}
+
+
+int main()
+{
+  A a;
+  foo( a );
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010611</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Why does this AVX intrinsic cause &quot;Segmentation fault&quot; with clang, but not GCC?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="clang" />
+            <category scheme="https://stackoverflow.com/tags" term="inline-assembly" />
+            <category scheme="https://stackoverflow.com/tags" term="intrinsics" />
+            <category scheme="https://stackoverflow.com/tags" term="avx" />
+        <author>
+            <name>sandthorn</name>
+            <uri>https://stackoverflow.com/users/6370128</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010611/why-does-this-avx-intrinsic-cause-segmentation-fault-with-clang-but-not-gcc" />
+        <published>2017-10-30T08:14:26Z</published>
+        <updated>2017-10-30T08:45:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;It seems two functions below can cause segmentation fault when compiled with clang using -mavx (or -march=sandybridge -&gt; skylake).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void _mm256_mul_double_intrin(double* a, double* b, int N)
+{
+    int nb_iters = N / ( sizeof(__m256d) / sizeof(double) );
+
+    __m256d* l = (__m256d*)a;
+    __m256d* r = (__m256d*)b;
+
+    for (int i = 0; i &amp;lt; nb_iters; ++i, ++l, ++r)
+        _mm256_store_pd((double *)l, _mm256_mul_pd(*l, *r));
+
+}
+
+void _mm256_mul_double(double* a, double* b, int N)
+{
+    int nb_iters = N / ( sizeof(__m256d) / sizeof(double) );
+
+    __m256d* l = (__m256d*)a;
+    __m256d* r = (__m256d*)b;
+
+    for (int i = 0; i &amp;lt; nb_iters; ++i, ++l, ++r)
+        __asm__(
+            &quot;vmulpd %[r], %[l], %[l] \t\n&quot;
+            : [l] &quot;+x&quot; (*l)
+            : [r] &quot;m&quot; (*r)
+            :
+        );
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When N is 2 fold or more of 4 (ymm register width / double width), the clang compiled code sometimes cause segmentation fault. (see wandbox link below)&lt;/p&gt;
+
+&lt;p&gt;GCC compiled code seems okey.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://godbolt.org/g/YPa7mU&quot; rel=&quot;nofollow noreferrer&quot;&gt;godbolt.org/g/YPa7mU&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wandbox.org/permlink/kex4e3lRCKfPAq2J&quot; rel=&quot;nofollow noreferrer&quot;&gt;wandbox.org/permlink/kex4e3lRCKfPAq2J&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;** I found the original source code here on stackoverflow.com&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010471</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Qt nextPendingConnection() returns NULL</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="qt" />
+            <category scheme="https://stackoverflow.com/tags" term="sockets" />
+        <author>
+            <name>Виталий</name>
+            <uri>https://stackoverflow.com/users/8849177</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010471/qt-nextpendingconnection-returns-null" />
+        <published>2017-10-30T08:03:58Z</published>
+        <updated>2017-10-30T08:58:27Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a Server class inherited from QTcpServer. I&#39;ve connected slots ands signals, but QTcpServer::nextPendingConnection() and Server::nextPendingConnection() returns NULL. What should I do?
+Here is Server&#39;s realization&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Server::Server(QObject *parent) : QTcpServer(parent)
+{
+    tcpSocket = new QTcpSocket();
+    start(QHostAddress::Any, quint16(port));
+}
+
+void Server::start(const QHostAddress &amp;amp;address, quint16 port)
+{
+    connect(this, &amp;amp;Server::newConnection, this, &amp;amp;Server::slotNewConnection);
+
+    if (!this-&amp;gt;listen(address, port))
+    {
+        ....
+    }
+    else
+    {
+        ....
+    }
+}
+    void Server::slotNewConnection() 
+{
+    QTcpSocket *client = this-&amp;gt;nextPendingConnection(); //RETURNS NULL
+    clients.insert(client);
+    client-&amp;gt;write(&quot;Hello&quot;);
+    connect(client, &amp;amp;QTcpSocket::readyRead, this,           &amp;amp;Server::slotServerRead);
+    connect(client, &amp;amp;QTcpSocket::disconnected, this, &amp;amp;Server::slotClientDisconnected);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Server.h file : &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Server : public QTcpServer
+{
+    Q_OBJECT
+public:
+
+    explicit Server(QObject *parent = 0);
+
+    void start(const QHostAddress &amp;amp;address, quint16 port);
+
+    void sendMessageToGroup();
+
+public slots:
+
+    void slotNewConnection();
+    void slotServerRead();
+    void slotClientDisconnected();
+
+private:
+
+    QSet&amp;lt;QTcpSocket*&amp;gt; clients;
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010426</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">4th order runge kutta and harmonic oscillator in c++</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="ode" />
+            <category scheme="https://stackoverflow.com/tags" term="runge-kutta" />
+        <author>
+            <name>mattiav27</name>
+            <uri>https://stackoverflow.com/users/2853667</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010426/4th-order-runge-kutta-and-harmonic-oscillator-in-c" />
+        <published>2017-10-30T08:00:52Z</published>
+        <updated>2017-10-30T08:21:42Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to solve equations of motion for an harmonic oscillator using 4th order runge kutta method, but as a result I get almost constant velocity and position; I feel that the problem is that I did not fully understood the method.&lt;/p&gt;
+
+&lt;p&gt;Could someone please explain my errors and correct me where I am wrong?&lt;/p&gt;
+
+&lt;p&gt;This is th code I am using (in c++)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+#include &amp;lt;math.h&amp;gt;
+#include &amp;lt;fstream&amp;gt;
+#include &amp;lt;iomanip&amp;gt;
+
+using namespace std;
+
+ofstream output;
+
+void rk(double,double*,double*, double*,double*, int);
+void print_file(double*, double*,double*,int n);
+
+int main(int argc, char* argv[]){
+    double *t,*x,*v,*ic;
+
+    double h,in=0,fin=2*M_PI;
+    int n=10000;
+
+    char* file=argv[1];
+    output.open(file);
+
+    h=(fin-in)/n;
+
+    t=new double[n];
+    x=new double[n];
+    v=new double[n];
+    ic=new double[2];
+
+    ic[0]=1;//in. cond. pos.
+    ic[1]=0;//in. cond. vel.
+
+    rk(h,ic,t,v,x,n);
+    for(int i=0;i&amp;lt;n;i+=500){cout &amp;lt;&amp;lt; x[i] &amp;lt;&amp;lt; &quot;  &quot; &amp;lt;&amp;lt; v[i] &amp;lt;&amp;lt; endl;}
+
+    print_file(t,x,v,n);
+
+    delete[] t;
+    delete[] x;
+    delete[] v;
+    delete[] ic;
+}
+
+void rk(double step,double *ic,double* t, double* v, double* x, int n){
+    double k1,k2,k3,k4;
+    for(int i=1;i&amp;lt;n;i++){
+        t[i]=i*step;
+
+        x[0]=ic[0];
+        v[0]=ic[1];
+
+        k1=step*(-x[i-1]);
+        k2=step*(-x[i-1]+step/2);
+        k3=step*(-x[i-1]+step/2);
+        k4=step*(-x[i-1]+step);
+        v[i]=v[i-1]+(k1+2*k2+2*k3+k4)*step/6;
+
+        k1=step*(v[i-1]);
+        k2=step*(v[i-1]+step/2);
+        k3=step*(v[i-1]+step/2);
+        k4=step*(v[i-1]+step);
+        x[i]=x[i-1]+(k1+2*k2+2*k3+k4)*step/6;
+}}
+
+void print_file(double* t, double* x, double* v, int n){
+    int i;
+    for(i=0; i&amp;lt;=n; i++)
+    output&amp;lt;&amp;lt;setw(15)&amp;lt;&amp;lt;t[i]&amp;lt;&amp;lt;setw(15)&amp;lt;&amp;lt;x[i]&amp;lt;&amp;lt;setw(15)&amp;lt;&amp;lt;v[i]&amp;lt;&amp;lt;endl;
+    return;}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47010201</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Opencv Sementation Fault using pthread to capture frames C++</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="linux" />
+            <category scheme="https://stackoverflow.com/tags" term="segmentation-fault" />
+            <category scheme="https://stackoverflow.com/tags" term="pthreads" />
+            <category scheme="https://stackoverflow.com/tags" term="opencv3.0" />
+        <author>
+            <name>Oliver Strong</name>
+            <uri>https://stackoverflow.com/users/5802653</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47010201/opencv-sementation-fault-using-pthread-to-capture-frames-c" />
+        <published>2017-10-30T07:43:47Z</published>
+        <updated>2017-10-30T08:11:28Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am receiving a segmentation fault when trying to run my program. I am only receiving segmentation faults after modifying my program to capture frames from two cameras on separate threads. I am using the same function on both threads and I am wondering if this is the problem.&lt;/p&gt;
+
+&lt;p&gt;Main.c&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+#include &amp;lt;pthread.h&amp;gt;
+#include &amp;lt;time.h&amp;gt;
+#include &amp;lt;opencv2/opencv.hpp&amp;gt;
+#include &quot;ThreadedWebcamCapture.h&quot;
+
+pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
+
+int main(){
+    ThreadedCapture Capture1;
+    Capture1.STOP = 0;
+    Capture1.CAP_NUMBER = 1;
+    Capture1.X_RESOLUTION = 640;
+    Capture1.Y_RESOLUTION = 480;
+
+    ThreadedCapture Capture2;
+    Capture2.STOP = 0;
+    Capture2.CAP_NUMBER = 0;
+    Capture2.X_RESOLUTION = 640;
+    Capture2.Y_RESOLUTION = 480;
+
+    pthread_t Capture1Thread;
+    int Capture1ThreadRetCode;
+
+    pthread_t Capture2Thread;
+    int Capture2ThreadRetCode;
+
+    printf(&quot;[INFO]Creating Threads\n&quot;);
+    Capture1ThreadRetCode = pthread_create(&amp;amp;Capture1Thread, NULL, &amp;amp;Capture_Thread, (void *)&amp;amp;Capture1);
+    printf(&quot;[INFO]Created Thread 1&quot;);
+    Capture2ThreadRetCode = pthread_create(&amp;amp;Capture2Thread, NULL, &amp;amp;Capture_Thread, (void *)&amp;amp;Capture2); //I think the error is occurring here
+    if(Capture1ThreadRetCode || Capture2ThreadRetCode != 0){
+        printf(&quot;[ERROR]Thread Creation Failed!\n&quot;);
+        exit(EXIT_FAILURE);
+    }
+    //cv::namedWindow(&quot;Window&quot;, cv::WINDOW_AUTOSIZE);
+    int NumberOfFrames;
+    time_t Seconds1;
+    Seconds1 = time(NULL);
+    cv::Mat Output;
+    while(1 == 1){
+        NumberOfFrames = NumberOfFrames + 1;
+        pthread_mutex_init(&amp;amp;mutex1, NULL);
+        pthread_mutex_lock(&amp;amp;mutex1);
+        if(!Capture1.FRAME.empty() || !Capture2.FRAME.empty()){
+            cv::hconcat(Capture1.FRAME, Capture2.FRAME, Output);
+        }
+        pthread_mutex_unlock(&amp;amp;mutex1);
+        if(!Output.empty()){
+            cv::imshow(&quot;Window&quot;, Output);
+        }
+        if(cv::waitKeyEx(1) &amp;gt;= 0){
+            Capture1.STOP = 1;
+            Capture2.STOP = 1;
+            break;
+        }
+    }
+    time_t Seconds2;
+    Seconds2 = time(NULL);
+    int Seconds = Seconds2 - Seconds1;
+    int FPS = NumberOfFrames / Seconds;
+    printf(&quot;[INFO]FPS %d\n&quot;, FPS);
+    pthread_join(Capture1Thread, NULL);
+    pthread_join(Capture2Thread, NULL);
+    printf(&quot;[INFO]Done\n&quot;);
+    return(0);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cvthreads.c&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+#include &amp;lt;pthread.h&amp;gt;
+#include &amp;lt;opencv2/opencv.hpp&amp;gt;
+#include &quot;ThreadedWebcamCapture.h&quot;
+
+void *Capture_Thread(void* Test){
+    ThreadedCapture *Testing = (ThreadedCapture *) Test;
+    cv::VideoCapture CAP ((*Testing).CAP_NUMBER);
+    CAP.set(CV_CAP_PROP_FRAME_WIDTH, (*Testing).X_RESOLUTION);
+    CAP.set(CV_CAP_PROP_FRAME_HEIGHT, (*Testing).Y_RESOLUTION);
+    while((*Testing).STOP != 1){
+        CAP.read((*Testing).FRAME);
+    }
+    return(NULL);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ThreadedWebcamCapture.h&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ifndef _THREADEDWEBCAMCAPTURE_H_
+#define _THREADEDWEBCAMCAPTURE_H_
+
+void *Capture_Thread(void* Test);
+
+typedef struct ThreadedCaptures  {
+    int STOP;
+    int CAP_NUMBER;
+    int X_RESOLUTION;
+    int Y_RESOLUTION;
+    cv::Mat FRAME;
+} ThreadedCapture;
+
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009750</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to generate documentation for fixtures in Fitnesse Tests</title>
+            <category scheme="https://stackoverflow.com/tags" term="c#" />
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="fitnesse" />
+        <author>
+            <name>hsd</name>
+            <uri>https://stackoverflow.com/users/580479</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009750/how-to-generate-documentation-for-fixtures-in-fitnesse-tests" />
+        <published>2017-10-30T07:10:42Z</published>
+        <updated>2017-10-30T07:10:42Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m working in project which is using &lt;code&gt;Fitnesse&lt;/code&gt; for a few years. One of important topic is to maintenance and add new tests. To avoid duplication is good to have some documentation for existing &lt;code&gt;fixtures&lt;/code&gt;. 
+Do you know tools which can maybe generate documentation for &lt;code&gt;fixtures&lt;/code&gt; from &lt;code&gt;C#&lt;/code&gt; or &lt;code&gt;C++&lt;/code&gt; code? &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009669</id>
+        <re:rank scheme="https://stackoverflow.com">3</re:rank>
+        <title type="text">What is missing from my use of std::fixed?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+        <author>
+            <name>Jake</name>
+            <uri>https://stackoverflow.com/users/8854642</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009669/what-is-missing-from-my-use-of-stdfixed" />
+        <published>2017-10-30T07:04:33Z</published>
+        <updated>2017-10-30T07:08:12Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m writing a program to simulate a plinko board, and within that program I&#39;ve got a function that outputs the money assigned to each slot. I&#39;m trying to use std::fixed and std::setprecision to output each value with two zeros after the decimal place, but each value is outputting as if I hadn&#39;t used fixed at all. What am I missing? Here&#39;s my code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;iomanip&amp;gt;
+
+using namespace std;
+
+void ChipsAllSlots(int numChips) {
+    const int NUM_SLOTS = 9;
+    const int slotWinnings[NUM_SLOTS] = {100, 500, 1000, 0, 10000, 0, 1000, 500, 100};
+
+    for (int i = 0; i &amp;lt; numChips; ++i) {
+        cout &amp;lt;&amp;lt; fixed &amp;lt;&amp;lt; setprecision(2) &amp;lt;&amp;lt; slotWinnings[i] &amp;lt;&amp;lt; endl;
+    }
+}
+
+int main() {
+    ChipsAllSlots(9);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009542</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Why eigenvector &amp; eigenvalue in LDA become zero?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="opencv" />
+        <author>
+            <name>Saeid</name>
+            <uri>https://stackoverflow.com/users/4872043</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009542/why-eigenvector-eigenvalue-in-lda-become-zero" />
+        <published>2017-10-30T06:55:41Z</published>
+        <updated>2017-10-30T06:55:41Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I want to implement LDA in OpenCV. I&#39;ve written following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int LDA_dim = 120;
+
+// Load data
+
+FileStorage fs(&quot;newStorageFile.yml&quot;, FileStorage::READ);
+
+// Read data
+
+Mat train_data, train_labels;
+
+fs[&quot;train_data&quot;] &amp;gt;&amp;gt; train_data;
+fs[&quot;train_labels&quot;] &amp;gt;&amp;gt; train_labels;
+
+// LDA
+
+if (LDA_dim &amp;gt; 0)
+{
+    LDA lda(LDA_dim);
+    lda.compute(train_data, train_labels);          // compute eigenvectors
+
+    Mat eigenvectors = lda.eigenvectors();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&#39;ve uploaded &lt;code&gt;newStorageFile.yml&lt;/code&gt; &lt;a href=&quot;http://cdn.persiangig.com/download/hrHrCRpdCW/newStorageFile.yml/dl&quot; rel=&quot;nofollow noreferrer&quot;&gt;here&lt;/a&gt;. &lt;code&gt;train_data&lt;/code&gt; have 650 rows and 600 cols and train_labels have 650 rows and 1 cols. I don&#39;t know why eigenvectors and eigenvalue become zero!!? PLZ help me to fix this code.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009529</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Trending Graphical Device Interface for C++</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="api" />
+            <category scheme="https://stackoverflow.com/tags" term="dll" />
+            <category scheme="https://stackoverflow.com/tags" term="libraries" />
+        <author>
+            <name>Sudipto</name>
+            <uri>https://stackoverflow.com/users/5575394</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009529/trending-graphical-device-interface-for-c" />
+        <published>2017-10-30T06:55:00Z</published>
+        <updated>2017-10-30T07:38:52Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need some clarification for using tending (creation of graph, pie chart , forecasting based on data) functionality Dlls in C++.&lt;/p&gt;
+
+&lt;p&gt;I know there are APIs / libraries / dlls like boost Libraries,DevExpress,Telerik etc.
+But I need to know which one is most widely used and is reliable.&lt;/p&gt;
+
+&lt;p&gt;Some inputs regarding this will be really helpful. Thanks in Advance&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009334</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Having trouble removing entry from queue and adding it to stack</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="list" />
+            <category scheme="https://stackoverflow.com/tags" term="stack" />
+            <category scheme="https://stackoverflow.com/tags" term="queue" />
+        <author>
+            <name>kbousman</name>
+            <uri>https://stackoverflow.com/users/7748609</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009334/having-trouble-removing-entry-from-queue-and-adding-it-to-stack" />
+        <published>2017-10-30T06:39:13Z</published>
+        <updated>2017-10-30T06:39:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;What I am trying to accomplish is once an entry has been removed from the queue, it then gets added to a stack.  The dequeue function works fine as far as removing the entry from the list.  But I&#39;m not sure how to get the function to add to the stack too.  This is my queue.cpp file.  If more of the code is needed, just let me know.  It&#39;s just a bigger program with four header files and five implementation files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Queue::Queue() : front(NULL), rear(NULL)
+{
+}
+
+Queue::Queue(char* qFileName) : front(NULL), rear(NULL)
+{
+ifstream in;
+qInfo currData;
+char gName[100];
+int gSize;
+char sSeating[100];
+char coupons[100];
+char fName[100];
+char email[100];
+
+in.open(qFileName);
+if(!in)
+{
+    cerr &amp;lt;&amp;lt; &quot;Failed to open &quot; &amp;lt;&amp;lt; qFileName &amp;lt;&amp;lt; &quot; for input.&quot; &amp;lt;&amp;lt; endl;
+}
+
+in.get(gName, 100, &#39;;&#39;);
+while(!in.eof())
+{
+    in.ignore(100, &#39;;&#39;);
+    in.get(sSeating, 100, &#39;;&#39;);
+    in.ignore(100, &#39;;&#39;);
+    in.get(coupons, 100, &#39;;&#39;);
+    in.ignore(100, &#39;;&#39;);
+    in.get(fName, 100, &#39;;&#39;);
+    in.ignore(100, &#39;;&#39;);
+    in.get(email, 100, &#39;;&#39;);
+    in.ignore(100, &#39;;&#39;);        
+    in &amp;gt;&amp;gt; gSize;
+    in.ignore(100, &#39;\n&#39;);
+
+    currData.setGname(gName);
+    currData.setGsize(gSize);
+    currData.setSeating(sSeating);
+    currData.setCoupons(coupons);
+    currData.setFname(fName);
+    currData.setEmail(email);
+
+    enqueue(currData);
+
+    in.get(gName, 100, &#39;;&#39;);
+}
+
+in.close();
+}
+
+
+Queue::Queue(const Queue&amp;amp; aQueue) : front(NULL), rear(NULL)
+{
+if(aQueue.front == NULL)
+    front = rear = NULL;
+else
+{
+    //This copies the first node
+    front = new qNode;
+    assert(front);                          //check allocation
+    front-&amp;gt;item = aQueue.front-&amp;gt;item;
+
+    //copy the rest of the queue
+    qNode* destNode = front;                  //Points to last node in the queue
+    qNode* srcNode = aQueue.front-&amp;gt;next;    //Points to node in aQueue
+    while(srcNode)
+    {
+        destNode-&amp;gt;next = new qNode;
+        assert(destNode-&amp;gt;next);
+        destNode = destNode-&amp;gt;next;
+        destNode-&amp;gt;item = srcNode-&amp;gt;item;
+
+        srcNode = srcNode-&amp;gt;next;
+    }
+
+    destNode-&amp;gt;next = NULL;
+
+    //set rear pointer
+    rear = destNode;
+}
+}
+
+
+Queue::~Queue()
+{
+qNode* curr = front;
+while(front)
+{
+    curr = front-&amp;gt;next;
+    delete front;
+    front = curr;
+}
+
+front = rear = NULL;
+}
+
+
+const Queue&amp;amp; Queue::operator=(const Queue&amp;amp; aQueue)
+{
+if(this == &amp;amp;aQueue)
+    return *this;
+else
+{
+    //Release dynamically allocated memory held by current object
+    qNode* curr = front;
+    while(front)
+    {
+        curr = front-&amp;gt;next;
+        delete front;
+        front = curr;
+    }
+
+    //Makes a deep copy of aQueue
+    if(aQueue.front == NULL)
+        front = rear = NULL;
+    else
+    {
+        //Copies the first node
+        front = new qNode;
+        assert(front);              //check allocation
+        front-&amp;gt;item = aQueue.front-&amp;gt;item;
+
+        //Copies the rest of the queue
+        qNode* destNode = front;                //Points to the last node in the new queue
+        qNode* srcNode = aQueue.front-&amp;gt;next;    //Points to node ini aQueue
+        while(srcNode)
+        {
+            destNode-&amp;gt;next = new qNode;
+            assert(destNode-&amp;gt;next);             //check allocation
+            destNode = destNode-&amp;gt;next;
+            destNode-&amp;gt;item = srcNode-&amp;gt;item;
+
+            srcNode = srcNode-&amp;gt;next;
+        }
+
+        destNode-&amp;gt;next = NULL;
+
+        rear = destNode;
+    }
+
+    return *this;
+}
+}
+
+
+bool Queue::enqueue(const qInfo&amp;amp; aInfo)
+{
+//Add to the rear of the queue
+qNode* newNode = new qNode;
+assert(newNode);                        //check allocation
+newNode-&amp;gt;item = aInfo;
+newNode-&amp;gt;next = NULL;
+
+if(rear == NULL)
+    front = rear = newNode;
+else
+{
+    rear-&amp;gt;next = newNode;
+    rear = newNode;                     //update end of the queue
+}
+
+return true;
+}
+
+
+bool Queue::dequeue(qInfo&amp;amp; aInfo)
+{
+
+//Check if the queue is empty
+if(isEmpty())
+    return false;
+else
+{
+    qNode* temp = front;
+
+    //Check if this is the Only Node
+    if(front == rear)
+        front = rear = NULL;
+    else
+        front = front-&amp;gt;next;
+
+    temp-&amp;gt;next = NULL;
+    aInfo = temp-&amp;gt;item;
+
+    delete temp;
+    return true;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is where I&#39;m trying to add to the Stack&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    if(aInfo.getCoupons(true))
+    {
+        char name[100];
+        char email[100];
+        Stack sAdd;
+
+        aInfo.getFname(name);
+        aInfo.getEmail(email);
+
+        sInfo newSinfo(name, email);
+        sAdd.push(newSinfo);
+    }
+}
+
+
+bool Queue::peek(qInfo&amp;amp; aInfo) const
+{
+if(isEmpty())
+    return false;
+else
+{
+    aInfo = front-&amp;gt;item;
+    return true;
+}
+}
+
+
+bool Queue::isEmpty() const
+{
+if(front == NULL)
+    return true;
+else
+    return false;
+}
+
+
+void Queue::display() const
+{
+qNode* curr;
+
+cout &amp;lt;&amp;lt; &quot;Customers in the Queue: &quot; &amp;lt;&amp;lt; endl &amp;lt;&amp;lt; endl;
+for(curr = front; curr; curr = curr-&amp;gt;next)
+    cout &amp;lt;&amp;lt; curr-&amp;gt;item &amp;lt;&amp;lt; endl;
+}
+
+
+void Queue::writeOut(char* qFileName)
+{
+ofstream out;
+
+out.open(qFileName);
+if(!out)
+{
+    cerr &amp;lt;&amp;lt; &quot;Failed to open &quot; &amp;lt;&amp;lt; qFileName &amp;lt;&amp;lt; &quot; for output.&quot; &amp;lt;&amp;lt; endl;
+}
+
+qNode* curr;
+char gName[100];
+int gSize;
+char coupons[100];
+char sSeating[100];
+char fName[100];
+char email[100];
+
+for(curr = front; curr; curr = curr-&amp;gt;next)
+{
+    curr-&amp;gt;item.getGname(gName);
+    curr-&amp;gt;item.getGsize(gSize);
+    curr-&amp;gt;item.getSeating(sSeating);
+    curr-&amp;gt;item.getFname(fName);
+    curr-&amp;gt;item.getEmail(email);
+
+    if(curr-&amp;gt;item.getCoupons(true))
+        strcpy(coupons, &quot;Yes&quot;);
+    else
+        strcpy(coupons, &quot;No&quot;);
+
+    out &amp;lt;&amp;lt; gName &amp;lt;&amp;lt; &#39;;&#39; &amp;lt;&amp;lt; gSize &amp;lt;&amp;lt; &#39;;&#39; &amp;lt;&amp;lt; sSeating &amp;lt;&amp;lt; &#39;;&#39; &amp;lt;&amp;lt; coupons &amp;lt;&amp;lt; &#39;;&#39;;
+    out &amp;lt;&amp;lt; fName &amp;lt;&amp;lt; &#39;;&#39; &amp;lt;&amp;lt; email &amp;lt;&amp;lt; endl;
+}
+
+out.close();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Any ideas what I should do differently?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009303</id>
+        <re:rank scheme="https://stackoverflow.com">2</re:rank>
+        <title type="text">How to visualize Caffe deep learning process&#39;s individual layer output in C++?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="machine-learning" />
+            <category scheme="https://stackoverflow.com/tags" term="neural-network" />
+            <category scheme="https://stackoverflow.com/tags" term="deep-learning" />
+            <category scheme="https://stackoverflow.com/tags" term="caffe" />
+        <author>
+            <name>batuman</name>
+            <uri>https://stackoverflow.com/users/2467772</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009303/how-to-visualize-caffe-deep-learning-processs-individual-layer-output-in-c" />
+        <published>2017-10-30T06:37:08Z</published>
+        <updated>2017-10-30T07:05:26Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am using &lt;a href=&quot;http://caffe.berkeleyvision.org/tutorial/layers.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;Caffe&lt;/a&gt; for deep learning. My program is in C++.&lt;/p&gt;
+
+&lt;p&gt;Every iteration of forward at &lt;code&gt;net_-&amp;gt;Forward(&amp;amp;loss);&lt;/code&gt;, we pass through all layers as defined in the prototxt file and how can I visualize each layer&#39;s output in C++.&lt;/p&gt;
+
+&lt;p&gt;Inside &lt;code&gt;net.cpp&lt;/code&gt; file inside &lt;code&gt;Caffe library&lt;/code&gt;, this loop iterate to forward layer by layer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;template &amp;lt;typename Dtype&amp;gt;
+Dtype Net&amp;lt;Dtype&amp;gt;::ForwardFromTo(int start, int end) {
+  CHECK_GE(start, 0);
+  CHECK_LT(end, layers_.size());
+  Dtype loss = 0;
+  for (int i = start; i &amp;lt;= end; ++i) {
+    //cout &amp;lt;&amp;lt; &quot;Forwarding &quot; &amp;lt;&amp;lt; layer_names_[i] &amp;lt;&amp;lt; endl;     
+    Dtype layer_loss = layers_[i]-&amp;gt;Forward(bottom_vecs_[i], top_vecs_[i]);
+    loss += layer_loss;
+    if (debug_info_) { ForwardDebugInfo(i); }
+  }
+  return loss;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;top_vecs_[i] is output of each layer&lt;/code&gt; and how can I visualize it?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009152</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">CMPNEQ yields wrong output</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="sse" />
+        <author>
+            <name>Jason</name>
+            <uri>https://stackoverflow.com/users/2991813</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009152/cmpneq-yields-wrong-output" />
+        <published>2017-10-30T06:22:47Z</published>
+        <updated>2017-10-30T06:22:47Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am not sure if this is a bug, but on the following input, &lt;code&gt;_mm_cmpneq_ps&lt;/code&gt; does not return correct output.&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&quot;http://x86.renejeschke.de/html/file_module_x86_id_37.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;the implementation of &lt;code&gt;CMPPS&lt;/code&gt;&lt;/a&gt;, &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;switch(ComparisonPredicate) {
+    case 0:
+        Operator = OperatorEqual;
+        break;
+    case 1:
+        Operator = OperatorLessThan;
+        break;
+    case 2:
+        Operator = OperatorLessOrEqual;
+        break;
+    case 3:
+        Operator = OperatorUnordered;
+        break;
+    case 4:
+        Operator = OperatorNotEqual;
+        break;
+    case 5:
+        Operator = OperatorNotLessThan;
+        break;
+    case 6:
+        Operator = OperatorNotLessOrEqual;
+        break;
+    case 7:
+        Operator = OperatorOrdered;
+        break;
+}
+CMP0 = Destination[0..31] Operator Source[0..31];
+CMP1 = Destination[32..63] Operator Source[32..63];
+CMP2 = Destination[64..95] Operator Source[64..95];
+CMP4 = Destination[96..127] Operator Source[96..127];
+if(CMP0 == true) Destination[0..31] = 0xFFFFFFFF;
+else Destination[0..31] = 0;
+if(CMP1 == true) Destination[32..63] = 0xFFFFFFFF;
+else Destination[32..63] = 0;
+if(CMP2 == true) Destination[64..95] = 0xFFFFFFFF;
+else Destination[64..95] = 0;
+if(CMP3 == true) Destination[96..127] = 0xFFFFFFFF;
+else Destination[96..127] = 0;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I don&#39;t see the reason that &lt;code&gt;_mm_cmpneq_ps&lt;/code&gt; cannot handle the following inputs.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;emmintrin.h&amp;gt;
+#include &amp;lt;inttypes.h&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+using namespace std;
+typedef __m128i block;
+
+bool blockEq1(block a, block b) {
+    __m128i vcmp = (__m128i) _mm_cmpneq_ps(_mm_castsi128_ps(a), _mm_castsi128_ps(b)); // compare a, b for inequality
+    uint16_t test = _mm_movemask_epi8(vcmp); // extract results of comparison
+    if (test == 0xffff) // *all* elements not equal
+        return false;
+    else if (test != 0) // *some* elements not equal
+        return false;
+    else // no elements not equal, i.e. all elements equal
+        return true;
+    }
+
+bool blockEq2(block a, block b) {
+    if (memcmp(&amp;amp;a, &amp;amp;b, 128/8)==0)
+        return true;
+    else
+        return false;
+}
+
+int main() {
+    long a[] __attribute__ ((aligned (16))) = { 0xB00C51A3FFBA524D, 0xB00D98DC96909B10};
+    long b[] __attribute__ ((aligned (16))) = { 0xB00C51A3FFBA524D, 0xB00D98DC96909B10};
+    block* a_ptr = (block*)a;
+    block a_block = _mm_load_si128(a_ptr);
+    block* b_ptr = (block*)b;
+    block b_block = _mm_load_si128(b_ptr);
+
+    if (blockEq1(a_block, b_block)) {
+        cout &amp;lt;&amp;lt; &quot;Method1: Equal &quot; &amp;lt;&amp;lt; endl;
+    } else {
+        cerr &amp;lt;&amp;lt; &quot;Method1: Not equal&quot; &amp;lt;&amp;lt; endl;
+    }
+
+    if (blockEq2(a_block, b_block)) {
+        cout &amp;lt;&amp;lt; &quot;Method2: Equal&quot; &amp;lt;&amp;lt; endl;
+    } else {
+        cerr &amp;lt;&amp;lt; &quot;Method2: Not equal&quot; &amp;lt;&amp;lt; endl;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above snippet can be compiled with: &lt;code&gt;g++ -msse2 -o test_equal main.cpp&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On my machine (Ubuntu 16.04, Intel Core i5-6400), the first comparison method &lt;code&gt;blockEq1&lt;/code&gt; returns false (shown below), which is wrong. Why?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ./test_equal
+Method1: Not equal
+Method2: Equal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first comparison method is taken from &lt;a href=&quot;https://stackoverflow.com/questions/6042399/how-to-compare-m128-types&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;P.S I tried a few other inputs, and sometimes it outputs correctly and sometimes it doesn&#39;t. It seems that a negative number (with 1 as the MSB) with large absolute value usually leads to this problem.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009057</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">C++: do I need to free the pointer inside function?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="pointers" />
+        <author>
+            <name>Shaowu</name>
+            <uri>https://stackoverflow.com/users/5037235</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009057/c-do-i-need-to-free-the-pointer-inside-function" />
+        <published>2017-10-30T06:15:08Z</published>
+        <updated>2017-10-30T08:22:58Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Do I need to free the &lt;code&gt;ptr&lt;/code&gt;? If so, how?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+void printFromPtr(int *ptr);
+
+int main()  
+{   
+  int a = 3;
+  int numPrint = 10000;
+  for (int i = 0; i &amp;lt; numPrint; i++)   
+  {
+    printFromPtr(&amp;amp;a);
+  }   
+}
+
+void printFromPtr(int* ptr) 
+{
+  cout &amp;lt;&amp;lt; *ptr &amp;lt;&amp;lt; endl; 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47009025</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Change vector memory allocation strategy?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="algorithm" />
+            <category scheme="https://stackoverflow.com/tags" term="vector" />
+            <category scheme="https://stackoverflow.com/tags" term="resize" />
+        <author>
+            <name>abdolahS</name>
+            <uri>https://stackoverflow.com/users/3270721</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47009025/change-vector-memory-allocation-strategy" />
+        <published>2017-10-30T06:11:30Z</published>
+        <updated>2017-10-30T07:03:55Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is there any way to change vector memory allocation strategy? using your own strategy instead of doubling vector size on resize.&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://stackoverflow.com/questions/11560904/vector-memory-allocation-strategy&quot;&gt;here&lt;/a&gt; a good explanation about memory allocation)&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008924</id>
+        <re:rank scheme="https://stackoverflow.com">-3</re:rank>
+        <title type="text">Compare Operators Priority in C++</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="compare" />
+            <category scheme="https://stackoverflow.com/tags" term="operator-keyword" />
+            <category scheme="https://stackoverflow.com/tags" term="priority" />
+        <author>
+            <name>Matin</name>
+            <uri>https://stackoverflow.com/users/8854513</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008924/compare-operators-priority-in-c" />
+        <published>2017-10-30T06:01:33Z</published>
+        <updated>2017-10-30T06:56:53Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;How I can compare operator priority in c++?&lt;br&gt;
+For example : &lt;br&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if( * &amp;gt; + ){
+   cout &amp;lt;&amp;lt; &quot;ok&quot;;
+};`
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008822</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to forse Bazel to set libraryes path to a desired one?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="linux" />
+            <category scheme="https://stackoverflow.com/tags" term="gcc" />
+            <category scheme="https://stackoverflow.com/tags" term="tensorflow" />
+            <category scheme="https://stackoverflow.com/tags" term="bazel" />
+        <author>
+            <name>DuckQueen</name>
+            <uri>https://stackoverflow.com/users/1973207</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008822/how-to-forse-bazel-to-set-libraryes-path-to-a-desired-one" />
+        <published>2017-10-30T05:51:24Z</published>
+        <updated>2017-10-30T05:51:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Say we have a very specific GCC and we want to build with it tensorflow&lt;/p&gt;
+
+&lt;p&gt;We export needed stuff:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export CC=/opt/gcc-4.9.3/bin/gcc
+export CXX=/opt/gcc-4.9.3/bin/g++
+export LIBRARY_PATH=/opt/gcc-4.9.3/lib64/gcc/x86_64-fedoraunited-linux-gnu/lib64/:$LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/gcc-4.9.3/lib64/gcc/x86_64-fedoraunited-linux-gnu/lib64/:$LD_LIBRARY_PATH
+bazel build //tensorflow:libtensorflow.so --action_env=LIBRARY_PATH --action_env=LD_LIBRARY_PATH 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We run Bazel&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; bazel build //tensorflow:libtensorflow.so --action_env=LIBRARY_PATH --action_env=LD_LIBRARY_PATH --verbose_failures
+WARNING: Output base &#39;/home/xxx/.cache/bazel/_bazel_xxx/19df47f8ddcc70ebf80eed36c3acb5a1&#39; is on NFS. This may lead to surprising failures and undetermined behavior.
+WARNING: /home/xxx/tensorflow/tensorflow/core/BUILD:1787:1: in includes attribute of cc_library rule //tensorflow/core:framework_headers_lib: &#39;../../external/nsync/public&#39; resolves to &#39;external/nsync/public&#39; not below the relative path of its package &#39;tensorflow/core&#39;. This will be an error in the future. Since this rule was created by the macro &#39;cc_header_only_library&#39;, the error might have been caused by the macro implementation in /home/xxx/tensorflow/tensorflow/tensorflow.bzl:1048:30.
+INFO: Found 1 target...
+ERROR: /home/xxx/.cache/bazel/_bazel_xxx/19df47f8ddcc70ebf80eed36c3acb5a1/external/nasm/BUILD.bazel:8:1: Linking of rule &#39;@nasm//:nasm&#39; failed (Exit 1): crosstool_wrapper_driver_is_not_gcc failed: error executing command
+  (cd /home/xxx/.cache/bazel/_bazel_xxx/19df47f8ddcc70ebf80eed36c3acb5a1/execroot/org_tensorflow &amp;amp;&amp;amp; \
+  exec env - \
+    LD_LIBRARY_PATH=:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64 \
+    PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/bin:/var/cfengine/bin:/usr/local/cuda/bin:/home/xxx/.local/bin:/home/xxx/bin \
+    PWD=/proc/self/cwd \
+  external/local_config_cuda/crosstool/clang/bin/crosstool_wrapper_driver_is_not_gcc -o bazel-out/host/bin/external/nasm/nasm -Wl,-no-as-needed -B/usr/bin/ -pie -Wl,-z,relro,-z,now -no-canonical-prefixes -pass-exit-codes &#39;-Wl,--build-id=md5&#39; &#39;-Wl,--hash-style=gnu&#39; -Wl,--gc-sections -Wl,-S -Wl,@bazel-out/host/bin/external/nasm/nasm-2.params).
+/usr/bin/ld: cannot find -lgcc_s
+collect2: error: ld returned 1 exit status
+Target //tensorflow:libtensorflow.so failed to build
+INFO: Elapsed time: 17.445s, Critical Path: 0.72s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yet it can not detect our &lt;code&gt;-lgcc_s&lt;/code&gt; which is present in our exported &lt;code&gt;LIBRARY_PATH&lt;/code&gt; and in &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt;. So how to force our &lt;code&gt;LIBRARY_PATH&lt;/code&gt; onto libraries on to which our library is dependent?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008801</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Is frequently updating std::atomic&lt;double&gt; data problematic?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="multithreading" />
+            <category scheme="https://stackoverflow.com/tags" term="c++11" />
+            <category scheme="https://stackoverflow.com/tags" term="atomic" />
+            <category scheme="https://stackoverflow.com/tags" term="stdatomic" />
+        <author>
+            <name>macxfadz</name>
+            <uri>https://stackoverflow.com/users/7467325</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008801/is-frequently-updating-stdatomicdouble-data-problematic" />
+        <published>2017-10-30T05:48:50Z</published>
+        <updated>2017-10-30T06:43:54Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assume &lt;code&gt;static std::atomic&amp;lt;double&amp;gt; dataX =0.0;&lt;/code&gt; defined in a cpp(Module) &lt;/li&gt;
+&lt;li&gt;In that &lt;strong&gt;module&lt;/strong&gt; two separate functions have been defined.&lt;/li&gt;
+&lt;li&gt;These functions will be invoked and run by two threads independently,under the hood(within functions) two continuous looping processes are defined there; until&lt;br&gt;
+some break statement gets called(using predicate).&lt;/li&gt;
+&lt;li&gt;When the two functions are running one function responsible for writing data to&lt;code&gt;dataX&lt;/code&gt; and other function responsible for reading from &lt;code&gt;dataX&lt;/code&gt; and then post it to a container.&lt;/li&gt;
+&lt;li&gt;These two execution of functions happen under two threads as described and each thread gets sleep for very tiny millisecond(&lt;strong&gt;1ms&lt;/strong&gt;) of duration.&lt;/li&gt;
+&lt;li&gt;Therefore  both Read/Write operations for &lt;code&gt;dataX&lt;/code&gt;  coupled and gets called within very less amount of CPU cycle time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How does C/C++ run-time behave such condition for &lt;code&gt;std::atomic&amp;lt;double&amp;gt;&lt;/code&gt; ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can we have a guarantee about both written and read values of  &lt;code&gt;std::atomic&amp;lt;double&amp;gt; dataX&lt;/code&gt; maintained such condition?&lt;/strong&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008693</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Detect shape and its area using OpenCV in Visual Studio C++ [on hold]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="image" />
+            <category scheme="https://stackoverflow.com/tags" term="visual-studio" />
+            <category scheme="https://stackoverflow.com/tags" term="opencv" />
+            <category scheme="https://stackoverflow.com/tags" term="object-detection" />
+        <author>
+            <name>Anton T</name>
+            <uri>https://stackoverflow.com/users/8690945</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008693/detect-shape-and-its-area-using-opencv-in-visual-studio-c" />
+        <published>2017-10-30T05:36:57Z</published>
+        <updated>2017-10-30T06:06:12Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have an image with some shapes that contains another similar shape. I am trying find the areas of those shapes and those types. This is first time to use OpenCV, so I don&#39;t know if there is easy way to find them. Is there any other functions in OpenCV can be used to detect the shapes and find the areas?
+Please help me&lt;img src=&quot;https://i.stack.imgur.com/3Eri1.png&quot; alt=&quot;![enter image description here&quot;&gt;]&lt;a href=&quot;https://i.stack.imgur.com/3Eri1.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008683</id>
+        <re:rank scheme="https://stackoverflow.com">-4</re:rank>
+        <title type="text">C++ program separated by space and sort it in ascending order [on hold]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+        <author>
+            <name>Vera Miles</name>
+            <uri>https://stackoverflow.com/users/8854473</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008683/c-program-separated-by-space-and-sort-it-in-ascending-order" />
+        <published>2017-10-30T05:35:55Z</published>
+        <updated>2017-10-30T06:41:55Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Write a program that will accept numbers separated by space and sort it in ascending order.&lt;/p&gt;
+
+&lt;p&gt;Sample :
+Enter the numbers separated by space :
+1 6 2 9 3&lt;/p&gt;
+
+&lt;p&gt;Ascending form is :
+1 2 3 6 9&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008591</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Can BOOST_FOREACH be customized for a pointer type?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="boost" />
+            <category scheme="https://stackoverflow.com/tags" term="boost-foreach" />
+        <author>
+            <name>o11c</name>
+            <uri>https://stackoverflow.com/users/1405588</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008591/can-boost-foreach-be-customized-for-a-pointer-type" />
+        <published>2017-10-30T05:27:23Z</published>
+        <updated>2017-10-30T05:27:23Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m writing C++98 (sorry), but working with a C library, which has many objects stored in data structures of the form:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;struct c_container
+{
+    size_t len;
+    int data[1];
+};
+
+struct c_container *make_container(size_t n)
+{
+    if (n == 0)
+        return NULL;
+    struct c_container *rv = (struct c_container *)malloc(sizeof(rv-&amp;gt;len) + n*sizeof(rv-&amp;gt;data));
+    rv-&amp;gt;len = n;
+    return rv;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&#39;d like to do C++-style iteration using &lt;code&gt;BOOST_FOREACH&lt;/code&gt;, but this doesn&#39;t work. (The &quot;old style&quot; of manually calling the range_begin and range_end functions does work).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;inline int *range_begin(c_container *c)
+{
+    return c ? &amp;amp;c-&amp;gt;data[0] : NULL;
+}
+inline int *range_end(c_container *c)
+{
+    return c ? &amp;amp;c-&amp;gt;data[c-&amp;gt;len] : NULL;
+}
+inline const int *range_begin(const c_container *c)
+{
+    return c ? &amp;amp;c-&amp;gt;data[0] : NULL;
+}
+inline const int *range_end(const c_container *c)
+{
+    return c ? &amp;amp;c-&amp;gt;data[c-&amp;gt;len] : NULL;
+}
+
+namespace boost
+{
+    template&amp;lt;&amp;gt;
+    struct range_mutable_iterator&amp;lt;c_container *&amp;gt;
+    {
+        typedef int *type;
+    };
+    template&amp;lt;&amp;gt;
+    struct range_const_iterator&amp;lt;c_container *&amp;gt;
+    {
+        typedef const int *type;
+    };
+}
+
+int main()
+{
+    c_container *coll = make_container(3);
+    coll-&amp;gt;data[0] = 1;
+    coll-&amp;gt;data[1] = 42;
+    coll-&amp;gt;data[2] = -1;
+
+    BOOST_FOREACH(int i, coll)
+    {
+        std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; std::endl;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is all that &lt;em&gt;should&lt;/em&gt; be necessary, according to &lt;a href=&quot;http://www.boost.org/doc/libs/1_65_1/doc/html/foreach/extensibility.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://www.boost.org/doc/libs/1_65_1/doc/html/foreach/extensibility.html&lt;/a&gt; (and I&#39;ve tested it with classes)&lt;/p&gt;
+
+&lt;p&gt;However, that example uses a class, whereas I&#39;m using a pointer to a class. Based on my investigation, it appears to be using the codepath that is only intended for &lt;code&gt;const char *&lt;/code&gt; and &lt;code&gt;const wchar_t *&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;In file included from boost-foreach.cpp:6:0:
+/usr/include/boost/foreach.hpp: In function ‘bool boost::foreach_detail_::done(const boost::foreach_detail_::auto_any_base&amp;amp;, const boost::foreach_detail_::auto_any_base&amp;amp;, boost::foreach_detail_::type2type&amp;lt;T*, C&amp;gt;*) [with T = c_container, C = mpl_::bool_&amp;lt;false&amp;gt;, const boost::foreach_detail_::auto_any_base&amp;amp; = const boost::foreach_detail_::auto_any_base&amp;amp;]’:
+boost-foreach.cpp:65:5:   instantiated from here
+/usr/include/boost/foreach.hpp:749:57: error: no match for ‘operator!’ in ‘!* boost::foreach_detail_::auto_any_cast [with T = c_container*, C = mpl_::bool_&amp;lt;false&amp;gt;, typename boost::mpl::if_&amp;lt;C, const T, T&amp;gt;::type = c_container*, const boost::foreach_detail_::auto_any_base&amp;amp; = const boost::foreach_detail_::auto_any_base&amp;amp;](((const boost::foreach_detail_::auto_any_base&amp;amp;)((const boost::foreach_detail_::auto_any_base*)cur)))’
+/usr/include/boost/foreach.hpp:749:57: note: candidate is: operator!(bool) &amp;lt;built-in&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is there some additional boost trait to specialize or something?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008587</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Incorrect image base address of win32k.sys on Win 8.1 and Win 10 x32</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="winapi" />
+            <category scheme="https://stackoverflow.com/tags" term="driver" />
+            <category scheme="https://stackoverflow.com/tags" term="kernel-module" />
+        <author>
+            <name>Jo&#227;o Pablo</name>
+            <uri>https://stackoverflow.com/users/8767827</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008587/incorrect-image-base-address-of-win32k-sys-on-win-8-1-and-win-10-x32" />
+        <published>2017-10-30T05:26:39Z</published>
+        <updated>2017-10-30T05:31:56Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Like you already know, the image base address of module &lt;em&gt;win32k.sys&lt;/em&gt; (at least here in my test enviroment on Win 8.1 and Win 10 both x32) is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;0x00010000&lt;/strong&gt; (output on console, user mode app)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;0x10000&lt;/strong&gt; (format to set directly on source code of you driver)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have a example (user mode code in C++) that show exactly this value, but why on my kernel mode code below i&#39;m find a diferent value of &lt;strong&gt;0x00010000&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/N91x0.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/N91x0.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &quot;stdafx.h&quot;
+#include &amp;lt;ntddk.h&amp;gt;
+#include &amp;lt;ntimage.h&amp;gt;
+#include &amp;lt;WinDef.h&amp;gt;
+
+#define IOCTL_PID CTL_CODE(FILE_DEVICE_UNKNOWN,0x902,METHOD_OUT_DIRECT,FILE_ANY_ACCESS)
+
+typedef enum _SYSTEM_INFORMATION_CLASS 
+{
+    SystemBasicInformation = 0,
+    SystemProcessorInformation = 1,             
+    SystemPerformanceInformation = 2,
+    SystemTimeOfDayInformation = 3,
+    SystemPathInformation = 4,
+    SystemProcessInformation = 5,
+    SystemCallCountInformation = 6,
+    SystemDeviceInformation = 7,
+    SystemProcessorPerformanceInformation = 8,
+    SystemFlagsInformation = 9,
+    SystemCallTimeInformation = 10,
+    SystemModuleInformation = 11,
+    SystemLocksInformation = 12,
+    SystemStackTraceInformation = 13,
+    SystemPagedPoolInformation = 14,
+    SystemNonPagedPoolInformation = 15,
+    SystemHandleInformation = 16,
+    SystemObjectInformation = 17,
+    SystemPageFileInformation = 18,
+    SystemVdmInstemulInformation = 19,
+    SystemVdmBopInformation = 20,
+    SystemFileCacheInformation = 21,
+    SystemPoolTagInformation = 22,
+    SystemInterruptInformation = 23,
+    SystemDpcBehaviorInformation = 24,
+    SystemFullMemoryInformation = 25,
+    SystemLoadGdiDriverInformation = 26,
+    SystemUnloadGdiDriverInformation = 27,
+    SystemTimeAdjustmentInformation = 28,
+    SystemSummaryMemoryInformation = 29,
+    SystemMirrorMemoryInformation = 30,
+    SystemPerformanceTraceInformation = 31,
+    SystemObsolete0 = 32,
+    SystemExceptionInformation = 33,
+    SystemCrashDumpStateInformation = 34,
+    SystemKernelDebuggerInformation = 35,
+    SystemContextSwitchInformation = 36,
+    SystemRegistryQuotaInformation = 37,
+    SystemExtendServiceTableInformation = 38,
+    SystemPrioritySeperation = 39,
+    SystemVerifierAddDriverInformation = 40,
+    SystemVerifierRemoveDriverInformation = 41,
+    SystemProcessorIdleInformation = 42,
+    SystemLegacyDriverInformation = 43,
+    SystemCurrentTimeZoneInformation = 44,
+    SystemLookasideInformation = 45,
+    SystemTimeSlipNotification = 46,
+    SystemSessionCreate = 47,
+    SystemSessionDetach = 48,
+    SystemSessionInformation = 49,
+    SystemRangeStartInformation = 50,
+    SystemVerifierInformation = 51,
+    SystemVerifierThunkExtend = 52,
+    SystemSessionProcessInformation = 53,
+    SystemLoadGdiDriverInSystemSpace = 54,
+    SystemNumaProcessorMap = 55,
+    SystemPrefetcherInformation = 56,
+    SystemExtendedProcessInformation = 57,
+    SystemRecommendedSharedDataAlignment = 58,
+    SystemComPlusPackage = 59,
+    SystemNumaAvailableMemory = 60,
+    SystemProcessorPowerInformation = 61,
+    SystemEmulationBasicInformation = 62,
+    SystemEmulationProcessorInformation = 63,
+    SystemExtendedHandleInformation = 64,
+    SystemLostDelayedWriteInformation = 65,
+    SystemBigPoolInformation = 66,
+    SystemSessionPoolTagInformation = 67,
+    SystemSessionMappedViewInformation = 68,
+    SystemHotpatchInformation = 69,
+    SystemObjectSecurityMode = 70,
+    SystemWatchdogTimerHandler = 71,
+    SystemWatchdogTimerInformation = 72,
+    SystemLogicalProcessorInformation = 73,
+    SystemWow64SharedInformation = 74,
+    SystemRegisterFirmwareTableInformationHandler = 75,
+    SystemFirmwareTableInformation = 76,
+    SystemModuleInformationEx = 77,
+    SystemVerifierTriageInformation = 78,
+    SystemSuperfetchInformation = 79,
+    SystemMemoryListInformation = 80,
+    SystemFileCacheInformationEx = 81,
+    MaxSystemInfoClass = 82  
+
+} SYSTEM_INFORMATION_CLASS;
+
+PDEVICE_OBJECT pDeviceObject;
+UNICODE_STRING dev,dos;
+
+extern &quot;C&quot; NTSTATUS ZwQuerySystemInformation(
+    IN UINT SystemInformationClass,
+    IN OUT PVOID SystemInformation,
+    IN ULONG SystemInformationLength,
+    OUT PULONG ReturnLength OPTIONAL ) ;
+
+extern &quot;C&quot; NTKERNELAPI NTSTATUS NTAPI PsLookupProcessByProcessId(IN HANDLE ProcessId, OUT PEPROCESS *Process );
+extern &quot;C&quot; NTKERNELAPI NTSTATUS NTAPI KeAttachProcess(PEPROCESS);
+extern &quot;C&quot; NTKERNELAPI NTSTATUS NTAPI KeDetachProcess();
+
+typedef struct {
+    PVOID   Unknown1;
+    PVOID   Unknown2;
+    PVOID   Base;
+    ULONG   Size;
+    ULONG   Flags;
+    USHORT  Index;
+    USHORT  NameLength;
+    USHORT  LoadCount;
+    USHORT  PathLength;
+    CHAR    ImageName[256];
+} SYSTEM_MODULE_INFORMATION_ENTRY, *PSYSTEM_MODULE_INFORMATION_ENTRY;
+
+NTSTATUS MyEnumKernelModule(IN CHAR* str, OUT PVOID *moduleadd, OUT ULONG *modulesz)
+{
+    NTSTATUS status = STATUS_SUCCESS;
+    ULONG n = 0;
+    ULONG i = 0;
+    PSYSTEM_MODULE_INFORMATION_ENTRY module = NULL;
+    PVOID pbuftmp = NULL;
+    ANSI_STRING ModuleName1,ModuleName2;
+
+    status = ZwQuerySystemInformation(SystemModuleInformation, &amp;amp;n, 0, &amp;amp;n);
+
+    pbuftmp = ExAllocatePool(NonPagedPool, n);
+
+    status = ZwQuerySystemInformation(SystemModuleInformation, pbuftmp, n, NULL);
+    module = (PSYSTEM_MODULE_INFORMATION_ENTRY)((PULONG )pbuftmp + 1 );
+
+    RtlInitAnsiString(&amp;amp;ModuleName1,str);
+
+    n = *((PULONG)pbuftmp );
+    for ( i = 0; i &amp;lt; n; i++ )
+    {
+        RtlInitAnsiString(&amp;amp;ModuleName2, module[i].ImageName);
+        DbgPrint(&quot;%d 0x%08X 0x%08X %s \n&quot;,module[i].Index, module[i].Base,module[i].Size,module[i].ImageName);
+        if (RtlCompareString(&amp;amp;ModuleName1, &amp;amp;ModuleName2, TRUE) == 0)
+        {
+            DbgPrint(&quot;\n Found!\n Path: %s \n BaseAddr: 0x%08X \n\n&quot;, ModuleName2.Buffer, module[i].Base);
+            *moduleadd = module[i].Base;
+            *modulesz = module[i].Size;
+            break;
+        }
+    }
+    ExFreePool(pbuftmp);
+
+    return status;
+}
+
+VOID ImgBase(IN PVOID lpBase, OUT PULONG pImageBase) {
+
+    PIMAGE_DOS_HEADER pDosHeader = (PIMAGE_DOS_HEADER)lpBase;
+    if (pDosHeader-&amp;gt;e_magic != IMAGE_DOS_SIGNATURE)
+    {
+        DbgPrint(&quot;Image has no DOS header!\n&quot;);
+        return;
+    }
+    PIMAGE_NT_HEADERS pNtHeader = (PIMAGE_NT_HEADERS)((char *)lpBase + pDosHeader-&amp;gt;e_lfanew);
+    if (pNtHeader-&amp;gt;Signature != IMAGE_NT_SIGNATURE)
+    {
+        DbgPrint(&quot;Image has no NT header!\n&quot;);
+        return;
+    }
+    if (pImageBase)
+        *pImageBase = pNtHeader-&amp;gt;OptionalHeader.ImageBase;
+}
+
+#ifdef __cplusplus
+extern &quot;C&quot; NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING  RegistryPath);
+#endif
+
+void testeUnload(IN PDRIVER_OBJECT DriverObject)
+{
+    DbgPrint(&quot;Goodbye from teste!\n&quot;);
+
+    IoDeleteSymbolicLink(&amp;amp;dos);
+    IoDeleteDevice(DriverObject-&amp;gt;DeviceObject);
+}
+
+NTSTATUS testePnP(IN PDEVICE_OBJECT pDeviceObject, IN PIRP Irp)
+{
+    PIO_STACK_LOCATION irpSp = IoGetCurrentIrpStackLocation(Irp);
+
+    ////////////////////////////////////
+
+    ULONG uImageBase = 0;
+    ULONG modsz = 0;
+    PVOID ModuleAddress = NULL;
+    HANDLE pid = NULL;
+    PEPROCESS pEProcess = NULL;
+
+    ///////////////////////////////////
+
+    switch (irpSp-&amp;gt;Parameters.DeviceIoControl.IoControlCode)
+    {
+
+    case IOCTL_PID:
+
+        pid = *(PHANDLE)Irp-&amp;gt;AssociatedIrp.SystemBuffer;
+
+        DbgPrint(&quot;csrss.exe PID: %d\n&quot;, pid); // 1&#186; csrss.exe
+
+        if(!NT_SUCCESS(PsLookupProcessByProcessId(pid, &amp;amp;pEProcess)))
+        {
+            DbgPrint( &quot;PsLookupProcessByProcessId unsuccessful\n&quot; );
+            break;
+        }
+
+        KeAttachProcess(pEProcess);
+
+        ////////////////////////////////////////////////////////////////////////////////
+
+        MyEnumKernelModule(&quot;\\systemroot\\system32\\win32k.sys&quot;,&amp;amp;ModuleAddress, &amp;amp;modsz);
+        //  DbgPrint(&quot;ModuleAddress: 0x%08X \n&quot;, ModuleAddress);
+
+        ////////////////////////////////////////////////////////////////////////////////
+
+        ImgBase(ModuleAddress, &amp;amp;uImageBase);
+        DbgPrint(&quot;ImageBase: 0x%08X \n&quot;, uImageBase);
+
+        KeDetachProcess();
+        ObDereferenceObject(pEProcess);
+
+        Irp-&amp;gt;IoStatus.Status = STATUS_SUCCESS;
+        Irp-&amp;gt;IoStatus.Information = 0;
+        IoCompleteRequest(Irp,IO_NO_INCREMENT);
+
+        return STATUS_SUCCESS;
+
+    default:
+        DbgPrint(&quot;Unknown IOCTL code: %#x\n&quot;,irpSp-&amp;gt;Parameters.DeviceIoControl.IoControlCode);
+
+        Irp-&amp;gt;IoStatus.Status=STATUS_INVALID_DEVICE_REQUEST;
+        Irp-&amp;gt;IoStatus.Information=0;
+
+        IoCompleteRequest(Irp,IO_NO_INCREMENT);
+        return STATUS_INVALID_DEVICE_REQUEST;
+
+    }
+
+    Irp-&amp;gt;IoStatus.Status=STATUS_SUCCESS;
+    Irp-&amp;gt;IoStatus.Information=0;
+
+    IoCompleteRequest(Irp,IO_NO_INCREMENT);
+    return STATUS_SUCCESS;
+}
+
+NTSTATUS testeCreate(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
+{
+
+    DbgPrint(&quot;IRP_MJ_CREATE!\n&quot;);
+    Irp-&amp;gt;IoStatus.Status = STATUS_SUCCESS;
+    Irp-&amp;gt;IoStatus.Information = 0;
+    IoCompleteRequest(Irp, IO_NO_INCREMENT);
+    return STATUS_SUCCESS;
+}
+
+NTSTATUS testeClose(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
+{
+
+    DbgPrint(&quot;IRP_MJ_CLOSE!\n&quot;);
+    Irp-&amp;gt;IoStatus.Status = STATUS_SUCCESS;
+    Irp-&amp;gt;IoStatus.Information = 0;
+    IoCompleteRequest(Irp, IO_NO_INCREMENT);
+    return STATUS_SUCCESS;
+}
+
+NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING  RegistryPath)
+{
+
+    RtlInitUnicodeString(&amp;amp;dev,L&quot;\\Device\\teste&quot;);
+    RtlInitUnicodeString(&amp;amp;dos,L&quot;\\??\\teste&quot;);
+
+    IoCreateDevice(DriverObject,0,&amp;amp;dev,FILE_DEVICE_UNKNOWN,FILE_DEVICE_SECURE_OPEN,FALSE,&amp;amp;pDeviceObject);
+    IoCreateSymbolicLink(&amp;amp;dos,&amp;amp;dev);
+
+    DriverObject-&amp;gt;DriverUnload = testeUnload;
+    DriverObject-&amp;gt;MajorFunction[IRP_MJ_DEVICE_CONTROL] = testePnP;
+    DriverObject-&amp;gt;MajorFunction[IRP_MJ_CREATE] = testeCreate;
+    DriverObject-&amp;gt;MajorFunction[IRP_MJ_CLOSE] = testeClose;
+
+    DbgPrint(&quot;Hello from teste!\n&quot;);
+
+    return STATUS_SUCCESS;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Use mode code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;conio.h&amp;gt;
+#include &amp;lt;Windows.h&amp;gt;
+#include &amp;lt;winternl.h&amp;gt;
+
+#pragma comment(lib,&quot;ntdll.lib&quot;)
+
+typedef struct _RTL_PROCESS_MODULE_INFORMATION
+{
+    HANDLE Section;
+    PVOID MappedBase;
+    PVOID ImageBase;
+    ULONG ImageSize;
+    ULONG Flags;
+    USHORT LoadOrderIndex;
+    USHORT InitOrderIndex;
+    USHORT LoadCount;
+    USHORT OffsetToFileName;
+    CHAR FullPathName[256];
+} RTL_PROCESS_MODULE_INFORMATION, *PRTL_PROCESS_MODULE_INFORMATION;
+
+typedef struct _RTL_PROCESS_MODULES
+{
+    ULONG NumberOfModules;
+    RTL_PROCESS_MODULE_INFORMATION Modules[1];
+} RTL_PROCESS_MODULES, *PRTL_PROCESS_MODULES;
+
+typedef BOOL (WINAPI *LPFN_Wow64DisableWow64FsRedirection)(PVOID* OldValue);
+typedef BOOL (WINAPI *LPFN_Wow64RevertWow64FsRedirection)(PVOID OldValue);
+
+PVOID OldValue;
+
+BOOL IsWow64()
+{
+    BOOL bIsWow64 = FALSE;
+
+    typedef BOOL (WINAPI *LPFN_ISWOW64PROCESS) (HANDLE, PBOOL);
+    LPFN_ISWOW64PROCESS fnIsWow64Process;
+    fnIsWow64Process = (LPFN_ISWOW64PROCESS) GetProcAddress( GetModuleHandle(&quot;kernel32&quot;),&quot;IsWow64Process&quot;);
+
+    if(NULL != fnIsWow64Process)
+    {
+        if (!fnIsWow64Process(GetCurrentProcess(),&amp;amp;bIsWow64))
+        {
+            //handle error
+        }
+    }
+    return bIsWow64;
+}
+
+int main()
+{
+
+    COORD c;
+    c.X=2200; 
+    c.Y=3200; 
+    SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE),c);
+
+    LPFN_Wow64DisableWow64FsRedirection pfnWow64DisableWowFsRedirection = (LPFN_Wow64DisableWow64FsRedirection)GetProcAddress(GetModuleHandle(&quot;kernel32&quot;),&quot;Wow64DisableWow64FsRedirection&quot;);
+    LPFN_Wow64RevertWow64FsRedirection pfnWow64RevertWow64FsRedirection = (LPFN_Wow64RevertWow64FsRedirection)GetProcAddress(GetModuleHandle(&quot;kernel32&quot;),&quot;Wow64RevertWow64FsRedirection&quot;);
+
+    //------------------------------------
+
+    HANDLE hFile, hFileMap;
+    LPVOID pMappedFile;
+    PIMAGE_DOS_HEADER pDosh;
+    PIMAGE_NT_HEADERS pPeh;
+
+    //------------------------------------
+
+    NTSTATUS status;
+    ULONG i;
+
+    PRTL_PROCESS_MODULES ModuleInfo;
+
+    ModuleInfo=(PRTL_PROCESS_MODULES)VirtualAlloc(NULL,1024*1024,MEM_COMMIT|MEM_RESERVE,PAGE_READWRITE); // Allocate memory for the module list
+
+    if(!ModuleInfo)
+    {
+        printf(&quot;\nUnable to allocate memory for module list (%d)\n&quot;,GetLastError());
+        return -1;
+    }
+
+    if(!NT_SUCCESS(status=NtQuerySystemInformation((SYSTEM_INFORMATION_CLASS)11,ModuleInfo,1024*1024,NULL))) // 11 = SystemModuleInformation
+    {
+        printf(&quot;\nError: Unable to query module list (%#x)\n&quot;,status);
+
+        VirtualFree(ModuleInfo,0,MEM_RELEASE);
+        return -1;
+    }
+
+    for(i=0;i&amp;lt;ModuleInfo-&amp;gt;NumberOfModules;i++)
+    {
+
+        if(strcmpi(&quot;win32k.sys&quot;, ModuleInfo-&amp;gt;Modules[i].FullPathName+ModuleInfo-&amp;gt;Modules[i].OffsetToFileName) == 0)
+        {
+
+            if(IsWow64())
+            {
+                if (pfnWow64DisableWowFsRedirection &amp;amp;&amp;amp; pfnWow64RevertWow64FsRedirection)
+                {
+                    if(TRUE == pfnWow64DisableWowFsRedirection(&amp;amp;OldValue))
+                    {
+
+                        hFile = CreateFile (&quot;C:\\Windows\\System32\\win32k.sys&quot;, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING,
+                            FILE_ATTRIBUTE_NORMAL, 0);
+
+                        pfnWow64RevertWow64FsRedirection(OldValue);
+                    }
+                }
+            }
+            else
+            {
+                hFile = CreateFile (&quot;C:\\Windows\\System32\\win32k.sys&quot;, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING,
+                    FILE_ATTRIBUTE_NORMAL, 0);
+            }
+
+            if (hFile == INVALID_HANDLE_VALUE)
+            {
+                MessageBox(0, &quot;Cannot open file!&quot;, &quot;Error&quot;, MB_ICONERROR);
+                ExitProcess(0);
+            }
+
+            hFileMap = CreateFileMapping (hFile, NULL, PAGE_READONLY, 0, 0, NULL);
+            if (!hFileMap)
+            {
+                CloseHandle(hFile);
+                ExitProcess(0);
+            }
+            pMappedFile = MapViewOfFile ( hFileMap, FILE_MAP_READ, 0, 0, 0);
+            if (!pMappedFile)
+            {
+                CloseHandle(hFileMap);
+                CloseHandle(hFile);
+                ExitProcess(0);
+            }
+
+            pDosh = (PIMAGE_DOS_HEADER)pMappedFile;br /&amp;gt;            pPeh  = (PIMAGE_NT_HEADERS)((DWORD)pMappedFile + pDosh-&amp;gt;e_lfanew);
+
+            printf(&quot;\n*****************************************************\n&quot;);
+            printf(&quot;\nBase address: 0x%p\n&quot;,ModuleInfo-&amp;gt;Modules[i].ImageBase);
+            printf(&quot;\nImage Base: 0x%p\n&quot;,pPeh-&amp;gt;OptionalHeader.ImageBase);
+            printf(&quot;\nImage name: %s\n&quot;,ModuleInfo-&amp;gt;Modules[i].FullPathName+ModuleInfo-&amp;gt;Modules[i].OffsetToFileName);
+            printf(&quot;\nImage full path: %s\n&quot;,ModuleInfo-&amp;gt;Modules[i].FullPathName);
+            printf(&quot;\nImage size: %d\n&quot;,ModuleInfo-&amp;gt;Modules[i].ImageSize);
+            printf(&quot;\n*****************************************************\n&quot;);
+
+            break;
+
+        }
+    }
+
+    VirtualFree(ModuleInfo,0,MEM_RELEASE);
+    UnmapViewOfFile(pMappedFile);
+    CloseHandle(hFileMap);
+    CloseHandle(hFile);
+
+    getch();
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008531</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Why can&#39;t I draw my vector of vertices?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+        <author>
+            <name>John Nguyen</name>
+            <uri>https://stackoverflow.com/users/8840893</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008531/why-cant-i-draw-my-vector-of-vertices" />
+        <published>2017-10-30T05:21:28Z</published>
+        <updated>2017-10-30T05:21:28Z</updated>
+        <summary type="html">
+            
+
+            &lt;pre&gt;&lt;code&gt;for(totalDarts = 0; totalDarts &amp;lt; input; totalDarts++){
+    distance = sqrt(cordX * cordX + cordY * cordY);
+
+    if(distance &amp;lt;= 1){
+        totalDartsInCircle++;
+        Vertex vBlack(Vector2f(cordX * 800, cordY * 800), Color::Black);
+        vArray.push_back(vBlack);
+    }
+    else{
+        Vertex vBlue(Vector2f(cordX * 800, cordY * 800), Color::Blue);
+        vArray.push_back(vBlue);
+    }
+
+    cordX = rand() / (double)RAND_MAX;
+    cordY = rand() / (double)RAND_MAX;
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I created my vertex using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vector &amp;lt;Vertex&amp;gt; vArray;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And I&#39;m drawing it through:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for(int i = 0; i &amp;lt; vArray.size(); i++){
+                window.draw(vArray[i]);
+            }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have no clue what&#39;s wrong. The error I get is no matching function for the call.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/47008508</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Restriction on Abstract Classes</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="abstract-class" />
+        <author>
+            <name>Rajesh</name>
+            <uri>https://stackoverflow.com/users/6446479</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/47008508/restriction-on-abstract-classes" />
+        <published>2017-10-30T05:18:04Z</published>
+        <updated>2017-10-30T06:28:19Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I was looking at &lt;a href=&quot;https://docs.microsoft.com/en-us/cpp/cpp/abstract-classes-cpp&quot; rel=&quot;nofollow noreferrer&quot;&gt;this microsoft article&lt;/a&gt; on abstract classes. The article says&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Abstract classes cannot be used for:  &lt;/p&gt;
+  
+  &lt;p&gt;• Variables or member data&lt;br&gt;
+  • Argument types&lt;br&gt;
+  • Function  return types&lt;br&gt;
+  • Types of explicit conversions&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If I understand correctly, this quote means that Abstract class type cannot be a member of another class, argument of another function or return type of another function. &lt;/p&gt;
+
+&lt;p&gt;What is the meaning of &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Types of explicit conversions &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Does this mean that we cannot typecast something like &lt;code&gt;(BaseClass)obj1&lt;/code&gt; where &lt;code&gt;obj1&lt;/code&gt; is of another class type? If this understanding is true, when casting one object to another class type may be necessary?&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>

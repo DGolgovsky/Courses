@@ -1,0 +1,8 @@
+Functor - class, object which have overrided operator()
+Predict - functor returns bool
+
+less, greater, less_equal, greater_equal, not_equal_to, equal_to
+minus, plus, divides, modulus, multiplies
+logical_not, logical_and, logical_or
+bit_and, bit_or, bit_xor
+hash

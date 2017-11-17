@@ -1,0 +1,15 @@
+all_of, any_of, none_of
+for_each
+find, find_if, find_if_not, find_first_of
+adjacent_find
+count, count_if
+equal, mismatch
+is_permutation
+lexicographical_compare
+search, search_n, find_end
+
+For ordered sequences:
+lower_bound, upper_bound, equal_range
+set_intersection, set_difference, set_union, set_symmetric_difference
+binary_search, includes
+

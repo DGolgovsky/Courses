@@ -1,0 +1,14 @@
+>> List of functions:
+    nm libHello.so
+>> compile .so lib:
+    gcc -o libHello.so -shared -fPIC hello.c
+>> compile bin-file with shared lib:
+    gcc main.c -L. -lHello -o hello
+>> LD path:
+    LD_LIBRARY_PATH=. ./hello
+>> name of function
+    c++filt _Z13hello_messagePKc
+>> used libraries:
+    ldd hello
+	better: objdump -p ./program | grep NEEDED
+

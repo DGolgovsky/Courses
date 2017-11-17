@@ -1,0 +1,16 @@
+<algorithm>
+fill, fill_n, generate, generate_n
+random_shuffle, shuffle
+copy, copy_n, copy_if, copy_backward
+move, move_backward
+remove, remove_if, remove_copy, remove_copy_if
+replace, replace_if, replace_copy, replace_copy_if
+reverse, reverse_copy
+rotate, rotate_copy
+swap_ranges
+transform
+unique, unique_copy
+
+<numeric>
+accumulate <- non-modif
+adjacent_difference, inner_product, partial_sum, iota

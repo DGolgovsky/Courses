@@ -1,0 +1,6 @@
+is_sorted, is_sorted_until
+sort, stable_sort
+nth_element, partial_sort
+merge, inplace_merge
+partition, stable_partition, is_partitioned,
+           partition_copy, partition_point

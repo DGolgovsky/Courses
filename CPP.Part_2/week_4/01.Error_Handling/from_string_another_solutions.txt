@@ -1,0 +1,60 @@
+#include <string>
+#include <sstream>
+#include <stdexcept>
+#include <typeinfo>
+
+// описание класса исключения bad_from_string
+class bad_from_string : public std::runtime_error
+{
+public:
+    bad_from_string(char const* const message): std::runtime_error(message)   {}
+    virtual const char* what() const noexcept
+    {
+        return "bad_from_string";
+    }
+};
+
+// функция from_string
+template<class T>
+T from_string(std::string const& s)
+{
+    std::istringstream stream(s);
+    T var;
+    stream >> std::noskipws >> var;
+    
+    if (stream.fail() || stream.peek() != -1) {
+        throw bad_from_string("FAILED");
+    }
+   
+    return var;
+}
+/************************************************/
+#include <string>
+#include <sstream>
+#include <exception>
+#include <stdexcept>
+
+// описание класса исключения bad_from_string
+class bad_from_string : public std::runtime_error {
+public:
+	using std::runtime_error::runtime_error;
+};
+
+template<typename T>
+T from_string(const std::string & str) {
+	std::istringstream sin(str);
+	if (!sin.good())
+		throw bad_from_string("Не доступно чтение из потока");
+	
+	T val;
+	sin >> std::noskipws >> val;
+	
+	if(sin.fail())
+		throw bad_from_string("Не удалось заполнить val");
+	else if (sin.bad())
+		throw bad_from_string("Поток совсем сломался (не починить)");
+	else if(!sin.eof() && 0!=sin.peek() && !sin.eof())
+		throw bad_from_string("Не достигнут конец потока");	
+
+	return val;
+}

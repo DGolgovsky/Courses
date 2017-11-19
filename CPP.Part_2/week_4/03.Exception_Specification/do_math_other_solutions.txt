@@ -1,0 +1,16 @@
+#include <utility> // std::declval
+
+// внутри do_math объекты типа T
+// - копируются
+// - присваиваются
+// - перемещаются
+// - складываются оператором +
+template<class T>
+void do_math() noexcept(noexcept(std::declval<T>() + std::declval<T>())    &&
+                        noexcept(T(std::declval<T>()))                     &&
+                        noexcept(T(std::declval<T&>()))                    &&
+                        noexcept((std::declval<T&>()) = std::declval<T>()) &&
+                        noexcept((std::declval<T&>()) = std::declval<T&>()))
+{
+    // тело функции нужно оставить пустым
+}

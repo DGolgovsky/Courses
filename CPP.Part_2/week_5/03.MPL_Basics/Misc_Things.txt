@@ -1,0 +1,42 @@
+Стоит упомянуть, что шаблоны с переменным числом аргументов позволяют делать следующие странные вещи.
+
+1. Наследовать класс от списка параметров шаблона
+// класс Derived будет унаследован от своих шаблонных параметров
+template <typename... BaseClasses> 
+struct Derived : BaseClasses... 
+{
+   // конструктор класса Derived будет 
+   // принимать значения типа своих базовых классов
+   Derived (BaseClasses const&... base_classes) 
+       // и создавать их при помощи конструктора копирования
+       : BaseClasses(base_classes)... 
+   {}
+};
+2. Узнавать количество аргументов.
+template<typename ...Args> 
+struct SomeStruct 
+{
+   // это не размер Args, а количество аргументов в Args
+   static const int count = sizeof...(Args); 
+};
+
+Поэтому длину списка можно было бы реализовать проще непосредственно в классе TypeList.
+// определяем список
+template <typename ... Types>
+struct TypeList; 
+
+// специализация по умолчанию
+template <typename H, typename... T>
+struct TypeList<H, T...> 
+{
+    using Head = H;
+    using Tail = TypeList<T...>;
+    static const int Length = 1 + sizeof...(T);
+};
+
+// специализация для пустого списка
+template <>
+struct TypeList<> 
+{ 
+    static const int Length = 0;
+};

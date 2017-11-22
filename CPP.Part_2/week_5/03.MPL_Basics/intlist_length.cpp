@@ -1,11 +1,6 @@
 #include <iostream>
-
-// Определение списка целых чисел времени компиляции IntList
-// Define list
-template<int ... Ints>
-struct IntList;
-
-// Specialization by default
+template<int ... Ints> struct IntList;
+template<> struct IntList<> {};
 template<int H, int ... T>
 struct IntList<H, T...>
 {
@@ -13,10 +8,17 @@ struct IntList<H, T...>
     using Tail = IntList<T...>;
 };
 
-// Specialization for empty list
-template<>
-struct IntList<> {};
+/* Another solution
+	template <typename T>
+	struct Length;
 
+	template<template<int ...> class IntList, int ...Values>
+	struct Length<IntList<Values...>>
+	{
+	    static const int value = sizeof...(Values);
+	};
+*/
+// Specialization for empty list
 template<typename TL>
 struct Length
 {

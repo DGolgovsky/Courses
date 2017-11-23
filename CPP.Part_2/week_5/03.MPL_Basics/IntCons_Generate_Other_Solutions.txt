@@ -1,0 +1,59 @@
+// тип IntList уже определён
+
+// реализация метафункции IntCons
+template <int H, typename TL>
+struct IntCons;
+
+template <int H, int... Values>
+struct IntCons<H, IntList<Values...>>
+{
+  using type = IntList<H, Values...>;
+};
+
+// реализация метафункции Generate
+template <typename TI1, typename TI2>
+struct Concat;
+
+template <int... Ts1, int... Ts2>
+struct Concat<IntList<Ts1...>, IntList<Ts2...> >
+{
+  using type = IntList<Ts1..., Ts2...>;
+};
+
+template <int len>
+struct Generate;
+
+template<int len>
+struct Generate {
+  using type = typename Concat<typename Generate<len-1>::type, IntList<len-1> >::type;
+};
+
+template<>
+struct Generate<0> {
+  using type = IntList<>;
+};
+/****************************************************************/
+
+// тип IntList уже определён
+
+// реализация метафункции IntCons
+template<int val, typename IL>
+struct IntCons;
+
+template<int val, int ... other>
+struct IntCons<val, IntList<other...>>
+{
+    using type = IntList<val, other...>;
+};
+// реализация метафункции Generate
+template<int N, int start = 0>
+struct Generate
+{
+    using type = typename IntCons<start, typename Generate<N, start + 1>::type>::type;
+};
+
+template<int N>
+struct Generate<N, N>
+{
+    using type = IntList<>;
+};

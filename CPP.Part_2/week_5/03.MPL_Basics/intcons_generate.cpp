@@ -1,51 +1,53 @@
-/* WARNING!
- * Code doen't work
- */
 #include <iostream>
 
-// Определение списка целых чисел времени компиляции IntList
-// Define list
-template<int ... Ints>
+//шаблон пустых и не пустых списков
+template<int ...Ints>
 struct IntList;
 
-// Specialization by default
-template<int H, int ... T>
-struct IntList<H, T...>
-{
-    static int const Head = H;
-    using Tail = IntList<T...>;
+//явная специализация с выделением первого элемента списка
+template<int N, int ...Ints>
+struct IntList<N, Ints...> {
+    static const int Head = N;
+    using Tail = IntList<Ints...>;
 };
 
-// Specialization for empty list
+//явная специализация пустого списка
 template<>
-struct IntList<> {};
+struct IntList<>{};
 
 // реализация метафункции IntCons
 // IntCons позволяет увеличить список на один элемент — он добавляется в начало списка.
-template<int H, typename TL>
-struct IntCons;
+template<int N, typename IL> struct IntCons;
 
-template<int H, int ... Ints>
-struct IntCons<H, IntList<Ints...>>
-{
-    using type = IntList<H, Ints...>;
-};
+template<int N, int... Ints> struct IntCons<N, IntList<Ints...>>
+{ using type = IntList<N, Ints...>; };
 
 // реализация метафункции Generate
 // Generate позволяет сгенерировать список длины N с числами от 0 до N - 1.
 // Hint: у метафункции Generate удобно сделать второй параметр со значением по умолчанию.
-template<int N, typename T = IntList<0>>
-struct Generate;
+template<class S> struct next_integer_sequence;
 
-template<int N, int N2 = 0>
-struct Generate<N-1, IntList<N>>
+template<int... Ints>
+struct next_integer_sequence<IntList<Ints...>>
 {
-    using type = IntList<N>;
+    using type = IntList<Ints..., sizeof...(Ints)>;
 };
-template<>
-struct Generate<0>
+
+template<int I, int N>
+struct make_int_seq_impl
 {
-    using type = IntList<0>;
+    using type = typename next_integer_sequence<
+            typename make_int_seq_impl<I+1, N>::type>::type;
+};
+
+template<int N> struct make_int_seq_impl<N, N>
+{
+    using type = IntList<>;
+};
+
+template<int N, int I = 0>
+struct Generate {
+    using type = typename make_int_seq_impl<I, N>::type;
 };
 
 template<typename T>
@@ -56,12 +58,13 @@ void check()
 
 int main()
 {
-    using L1 = IntList<2,3,4>;
+    using L1 = IntList<2, 3, 4>;
 
     using L2 = IntCons<1, L1>::type;   // IntList<1,2,3,4>
 
     using L3 = Generate<5>::type;      // IntList<0,1,2,3,4>
 
+    check<L1>();
     check<L2>();
     check<L3>();
 

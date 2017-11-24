@@ -1,58 +1,57 @@
-#include <iostream>
+/*
+ * Воспользуйтесь IntList и метафункцией Generate для того,
+ * чтобы научиться "раскрывать" кортежи.
+ * От вас потребуется написать функцию apply, которая
+ * принимает функтор и кортеж с аргументами для вызова этого функтора
+ * и вызывает функтор от этих аргументов.
+*/
+
 #include <tuple>
+#include <iostream>
 
-//шаблон пустых и не пустых списков
-template<int ...Ints>
-struct IntList;
-
-//явная специализация с выделением первого элемента списка
-template<int N, int ...Ints>
-struct IntList<N, Ints...> {
-    static const int Head = N;
-    using Tail = IntList<Ints...>;
-};
-
-//явная специализация пустого списка
-template<>
-struct IntList<>{};
-
-template<class S> struct next_integer_sequence;
-
-template<int... Ints> struct next_integer_sequence<IntList<Ints...>>
-{ using type = IntList<Ints..., sizeof...(Ints)>; };
-
-template<int I, int N> struct make_int_seq_impl
-{ using type = typename next_integer_sequence<
-            typename make_int_seq_impl<I+1, N>::type>::type; };
-
-template<int N> struct make_int_seq_impl<N, N>
-{ using type = IntList<>; };
-
-template<int N, int I = 0> struct Generate
-{ using type = typename make_int_seq_impl<I, N>::type; };
-
-template<typename T> void check()
-{ std::cout << __PRETTY_FUNCTION__ << std::endl; }
-/************************/
-
-template<typename F, typename T>
-auto apply(F f, T const &tpl)
-    -> decltype(f(tpl))
+/* IntList */
+template<int ... Ints> struct IntList;
+template<int H, int ... T> struct IntList<H, T...>
 {
-    return f(tpl);
-}
+    static int const Head = H;
+    using Tail = IntList<T...>;
+};
+template<> struct IntList<> {};
+/* IntList */
 
-/************************/
+/* Generate */
+template<int N, typename T> struct IntCons;
+template<int N, int ...L> struct IntCons<N, IntList<L...>>
+{ using type = IntList<N, L...>; };
+template<int N, int K = 0> struct Generate
+{ using type = typename IntCons<K, typename Generate<N - 1, K + 1>::type>::type; };
+template<int K> struct Generate<1, K>
+{ using type = IntList<K>; };
+template<> struct Generate<0>
+{ using type = IntList<>; };
+/* Generate */
+
+/* apply */
+template<typename F, typename T, int ...Ints>
+auto callFunc(F& f, T const& tpl, IntList<Ints...>)
+    -> decltype(f(std::get<Ints>(tpl)...))
+{
+    return f(std::get<Ints>(tpl)...);
+};
+template<typename F, typename ...Args>
+auto apply(F &f, std::tuple<Args...> const& tpl)
+    -> decltype(callFunc(f, tpl, typename Generate<sizeof ...(Args)>::type()))
+{
+    return callFunc(f, tpl, typename Generate<sizeof ...(Args)>::type());
+};
+/* apply */
+
 int main()
 {
-    using L1 = IntList<2, 3, 4>;
-    using L3 = Generate<5>::type;      // IntList<0,1,2,3,4>
-
     auto f = [](int x, double y, double z) { return x + y + z; };
-    auto t = std::make_tuple(30, 5.0, 1.6);  // std::tuple<int, double, double>
-    auto res = apply(f, t);                // res = 36.6
-    check<L1>();
-    check<L3>();
+    auto t = std::make_tuple(30, 5.0, 1.6); // std::tuple<int, double, double>
+    auto res = apply(f, t); // res = 36.6
+
     std::cout << res << std::endl;
 
     return 0;

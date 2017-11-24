@@ -1,4 +1,27 @@
-// тип IntList уже определён
+/* "Etalon" */
+
+template<int H, typename TL>
+struct IntCons;
+
+template<int H, int... values>
+struct IntCons<H, IntList<values...>>
+{
+    using type = IntList<H, values...>;
+};
+
+template<size_t N, int K = 0>
+struct Generate
+{
+    using type = typename IntCons<K, typename Generate<N - 1, K + 1>::type>::type;
+};
+
+template<int K>
+struct Generate<0, K>
+{
+    using type = IntList<>;
+};
+
+/******************************/
 
 // реализация метафункции IntCons
 template <int H, typename TL>
@@ -32,9 +55,8 @@ template<>
 struct Generate<0> {
   using type = IntList<>;
 };
-/****************************************************************/
 
-// тип IntList уже определён
+/****************************************************************/
 
 // реализация метафункции IntCons
 template<int val, typename IL>

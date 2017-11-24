@@ -1,0 +1,34 @@
+#include <tuple>
+
+// тип IntList и метафункция Generate уже определены
+
+// определение функции apply
+template<typename F, typename ... Args1, int ... Args2>
+auto Apply(F f, const std::tuple<Args1...> & t, const IntList<Args2...> & i) -> decltype(f(std::get<Args2>(t)...)) {
+    return f(std::get<Args2>(t)...);
+}
+
+template<typename F, typename ... Args>
+auto apply(F f, const std::tuple<Args...> & t) -> decltype(Apply(f, t, typename Generate<sizeof...(Args)>::type())) {
+    return Apply(f, t, typename Generate<sizeof...(Args)>::type());
+}
+/*****************************************/
+#include <tuple>
+
+// тип IntList и метафункция Generate уже определены
+
+// определение функции apply
+template <typename func, typename ...Args>
+auto apply (func f, std::tuple<Args... > t) -> typename std::result_of<func(Args...)>::type
+{
+  typename Generate<sizeof...(Args)>::type seq;
+  return apply(f, t, seq);
+};
+
+template <typename func, typename ...Args, int... Seq>
+auto apply (func f, std::tuple<Args... > t, IntList<Seq...>) -> typename std::result_of<func(Args...)>::type
+{
+  return f(std::get<Seq>(t)...);
+};
+/*****************************************/
+

@@ -1,0 +1,24 @@
+template<class L1, class L2, template<int, int> class F>
+struct Zip
+{
+    using type = typename IntCons< F<L1::Head, L2::Head>::value, 
+                                   typename Zip<typename L1::Tail,
+                                                typename L2::Tail, F>::type >::type;    
+};
+
+template<template <int, int> class F>
+struct Zip<IntList<>, IntList<>, F>
+{
+    using type = IntList<>;
+};
+/****************************************/
+template<typename TL1, typename TL2, template<int, int> class TMF>
+struct Zip;
+
+template<int ... Values1, int ... Values2, template<int, int> class TMF>
+struct Zip<IntList<Values1...>, IntList<Values2...>, TMF>
+{
+	using type = IntList<TMF<Values1, Values2>::value...>;
+};
+/****************************************/
+

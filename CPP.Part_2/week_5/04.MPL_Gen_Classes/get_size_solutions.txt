@@ -1,0 +1,63 @@
+// Ожидаемое решение:
+template<class T, size_t (T::*)() const = &T::size>
+size_t get_size(T const& t)
+{
+    return t.size();
+}
+
+template<class T, size_t (T::*) = &T::size>
+size_t get_size(T const& t)
+{
+    return t.size;
+}
+/*****************************************/
+#include <type_traits>
+
+template< typename T, bool method >
+struct GetImpl
+{
+    static size_t size( const T& obj )
+    {
+        return obj.size;
+    }
+};
+
+template< typename T >
+struct GetImpl<T,true>
+{
+    static size_t size( const T& obj )
+    {
+        return obj.size();
+    }
+};
+
+template< typename T >
+size_t get_size( const T& obj )
+{
+    return GetImpl<T,std::is_member_function_pointer<decltype(&T::size)>::value>::size( obj );
+}
+/*****************************************/
+template <class T>
+size_t get_size(const T& t, typename std::enable_if<
+        std::is_same<decltype(t.size()), size_t>::value, T>::type* = 0){
+    return t.size();
+}
+
+template <class T>
+size_t get_size(const T& t, typename std::enable_if<
+        std::is_same<decltype(t.size), size_t>::value, T>::type* = 0){
+    return t.size;
+}
+/*****************************************/
+template<typename T>
+auto get_size(T const& obj) -> decltype(obj.size())
+{
+    return obj.size();
+}
+
+template<typename T>
+auto get_size(T const& obj) -> decltype(obj.size)
+{
+    return obj.size;
+}
+}

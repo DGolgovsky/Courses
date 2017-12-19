@@ -1,0 +1,15 @@
+server      client
+------      ------
+socket      socket
+bind
+recvfrom    sendto
+
+size_t sendto(int sd, const void *buffer, size_t len, int flags,
+              const struct sockaddr *to,
+              socklen_t tolen);
+
+size_t recvfrom(int sd, void *buffer, size_t len,
+                int flags, struct sockaddr *from,
+                socklen_t *fromlen);
+
+Guarantee send/recv in one dgram: 576 byte

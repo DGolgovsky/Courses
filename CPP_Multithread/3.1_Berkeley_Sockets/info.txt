@@ -1,0 +1,15 @@
+<---OPEN CONNECTION --->
+    SERVER              CLIENT
+socket()                   socket()
+bind()
+listen()                   connect(int fd, struct sockaddr *, size_t)
+accept()   <------ SYN J
+           ------> SYN K, ACK J+1
+           <------ ACK K+1
+           send / recv
+
+<---CLOSE CONNECTION --->
+client -> FIN M
+server -> ACK M+1
+server -> FIN N
+client -> ACK N+1

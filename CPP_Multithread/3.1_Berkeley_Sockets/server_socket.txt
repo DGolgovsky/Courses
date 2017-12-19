@@ -1,0 +1,68 @@
+int descriptor = socket(domain, type, protocol);
+
+domain:
+    AF_INET     -> IPv4
+    AF_INET6    -> IPv6
+    AF_UNIX     -> unix socket
+
+type:
+    sock_STREAM -> TCP
+    sock_DGRAM  -> UDP
+
+protocol:
+    0           -> default (TCP)
+    IPPROTO_TCP -> TCP
+    IPPROTO_UDP -> UDP
+-----------------------------------------------
+bind(socket_descriptor, (struct sockaddr *) sa, sizeof(sa));
+
+IPv4:
+    struct sockaddr_in sa;    -> IPv4
+    struct sockaddr_in6 sav6; -> IPv6
+    struct sockaddr_un sau;   -> Unix socket
+
+    sa.sin_family = AF_INET;
+    sa.sin_port = htons(12345);
+    sa.sin_addr.s_addr = htonl([
+        INADDR_LOOPBACK -> 127.0.0.1
+        INADDR_ANY      -> 0.0.0.0
+    ]);
+
+    Convert string IP addr into numeric:
+        auto ip = inet_addr ("10.0.0.1");
+        auto ipv4 = inet_pton(AF_INET, "10.0.0.1", &(sa.sin_addr));
+
+    sau.sun_family = AF_UNIX;
+    strcpy(sau.sun_path, "/tmp/a.sock");
+-----------------------------------------------
+listen(sd, SOMAXCONN);
+sd == socket_descriptor
+// By default SOMAXCONN = 128 connections
+
+while (s1 = accept(sd, 0, 0)) {
+}
+
+first 0:
+    struct sockaddr * // IP + port
+second 0:
+    size *
+-----------------------------------------------
+size_t read(int fd, void *buffer, size_t count);
+size_t write(int fd, const void *buffer, size_t count);
+
+SIGPIPE -> connection errors
+
+    signal(SIGPIPE, SIG_IGN); // Bad case
+
+size_t recv(int fd, void *buffer, size_t count, int flags);
+size_t send(int fd, const void *buffer, size_t count, int flags);
+
+flags:
+    MSG_NOSIGNAL -> no signal messages
+-----------------------------------------------
+close(sd); -> close descriptor, but not connection
+
+shutdown(sd, SHUT_RDWR  <-> read/write
+             SHUT_RD     -> read
+             SHUT_WR    <-  write
+

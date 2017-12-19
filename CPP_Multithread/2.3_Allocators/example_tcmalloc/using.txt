@@ -1,0 +1,12 @@
+sido ldconfig -p | fgrep tcmalloc
+LD_PRELOAD="libtcmalloc.so" ./mass_alloc
+
+Output:
+    before:
+~        === 0.000041
+    after:
+~        === 0.000003
+
+Check for leaks:
+LD_PRELOAD="libtcmalloc.so" HEAPCHECK=normal ./mass_alloc
+

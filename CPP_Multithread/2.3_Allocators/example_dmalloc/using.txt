@@ -1,0 +1,3 @@
+eval `dmalloc -d 0 -l leak.log -p log-non-free`
+sudo ldconfig -p | grep dmalloc
+LD_PRELOAD="libdmalloc.so" ./leak

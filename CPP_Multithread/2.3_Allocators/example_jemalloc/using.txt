@@ -1,0 +1,2 @@
+sudo ldconfig -p | fgrep jemalloc
+LD_PRELOAD="libjemalloc.so" ./mass_alloc

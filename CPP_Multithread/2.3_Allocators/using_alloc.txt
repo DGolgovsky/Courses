@@ -1,0 +1,9 @@
+Example:
+    std::vector<int, std::allocator<int>> v(16);
+
+Intel TBB also have allocator
+
+dmalloc
+tcalloc
+jealloc
+

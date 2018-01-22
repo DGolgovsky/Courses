@@ -1,4 +1,4 @@
-sido ldconfig -p | fgrep tcmalloc
+sudo ldconfig -p | fgrep tcmalloc
 LD_PRELOAD="libtcmalloc.so" ./mass_alloc
 
 Output:

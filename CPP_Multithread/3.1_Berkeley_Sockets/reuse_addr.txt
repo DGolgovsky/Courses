@@ -1,12 +1,13 @@
 int optval = 1;
 setsockopt(sd, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof(optval));
 
+---TIMEOUT---
 struct timeval tv;
 tv.tv_sec = 16; // seconds
 tv.tv_usec = 0; // misec
 
-Timeout to send
+// Timeout to receive
 setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, (char *)&tv, sizeof(tv));
 
-Timeout to recieve
+// Timeout to send
 setsockopt(sd, SOL_SOCKET, SO_SNDTIMEO, (char *)&tv, sizeof(tv));

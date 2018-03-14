@@ -1,0 +1,18 @@
+---SYSTEM_CALLS---
+strace ./server 2> server.log
+
+man strace
+
+---TEST_SERVER---
+./server&
+telnet 127.0.0.1 12345
+$ PING
+$ q
+
+ps aux | fgrep server
+~3343 server
+
+lsof -p 3343
+strace -p 3343
+ltrace -p 3343
+gdb -p 3343

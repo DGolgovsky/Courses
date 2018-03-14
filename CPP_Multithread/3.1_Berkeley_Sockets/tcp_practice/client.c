@@ -6,17 +6,6 @@
 
 int main(int argc, char **argv)
 {
-    /*
-     * connect (int fd, struct sockaddr *, size_t);
-     *
-     * // Close connection:
-     * shutdown(s, SHUT_RDWR <-->
-     *             SHUT_RD   ---> read close
-     *             SHUT_WR   <--- write close
-     *             );
-     * close(s);
-     */
-
     int Socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
     struct sockaddr_in SockAddr;

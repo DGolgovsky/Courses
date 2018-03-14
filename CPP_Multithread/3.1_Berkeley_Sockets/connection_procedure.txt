@@ -1,0 +1,18 @@
+SERVER                  CLIENT
+            ---TCP---
+----------------------------------
+socket()                socket()
+bind()
+listen()
+accept()     <-----     connect()
+         send <--> recv
+                        shutdown()
+                OR
+shutdown()
+close()                 close()
+
+            ---UDP---
+socket()                socket()
+bind()
+recvfrom()   <------    sendto()
+close()                 close()

@@ -1,0 +1,37 @@
+int socket_descriptor = socket(domain, type, protocol);
+
+domain:
+    AF_INET     -> IPv4
+    AF_INET6    -> IPv6
+    AF_UNIX     -> unix socket
+
+type:
+    SOCK_STREAM -> TCP
+    SOCK_DGRAM  -> UDP
+
+protocol:
+    0           -> default (TCP)
+    IPPROTO_TCP -> TCP
+    IPPROTO_UDP -> UDP
+-----------------------------------------------
+bind(socket_descriptor, (struct sockaddr *) sa, sizeof(sa));
+
+IPv4:
+    struct sockaddr_in sa;    -> IPv4
+    struct sockaddr_in6 sav6; -> IPv6
+    struct sockaddr_un sau;   -> Unix socket
+
+    sa.sin_family = AF_INET;
+    sa.sin_port = htons(12345);
+    sa.sin_addr.s_addr = htonl([
+        INADDR_LOOPBACK -> 127.0.0.1
+        INADDR_ANY      -> 0.0.0.0
+    ]);
+
+    Convert string IP addr into numeric:
+        auto ip = inet_addr ("10.0.0.1");
+        auto ipv4 = inet_pton(AF_INET, "10.0.0.1", &(sa.sin_addr));
+
+    sau.sun_family = AF_UNIX;
+    strcpy(sau.sun_path, "/tmp/a.sock");
+

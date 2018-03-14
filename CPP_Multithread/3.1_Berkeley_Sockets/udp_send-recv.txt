@@ -6,10 +6,10 @@ recvfrom    sendto
 
 size_t sendto(int sd, const void *buffer, size_t len, int flags,
               const struct sockaddr *to,
-              socklen_t tolen);
+              socklen_t to_len);
 
 size_t recvfrom(int sd, void *buffer, size_t len,
                 int flags, struct sockaddr *from,
-                socklen_t *fromlen);
+                socklen_t *from_len);
 
 Guarantee send/recv in one dgram: 576 byte

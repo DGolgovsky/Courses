@@ -24,7 +24,7 @@ int set_nonblock(int fd)
 #endif
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     int MasterSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     std::set<int> SlaveSockets;
@@ -43,11 +43,11 @@ int main(int argc, char *argv[])
     Set[0].fd = MasterSocket;
     Set[0].events = POLLIN;
 
-    while(true) {
+    while (true) {
         unsigned int Index = 1;
-        for(auto Iter = SlaveSockets.begin();
+        for (auto Iter = SlaveSockets.begin();
                 Iter != SlaveSockets.end();
-                Iter++) {
+                ++Iter) {
             Set[Index].fd = *Iter;
             Set[Index].events = POLLIN;
             Index++;
@@ -56,15 +56,15 @@ int main(int argc, char *argv[])
 
         poll(Set, SetSize, -1);
 
-        for(unsigned int i = 0; i < SetSize; i++) {
-            if(Set[i].revents & POLLIN) {
-                if(i) {
+        for (unsigned int i = 0; i < SetSize; ++i) {
+            if (Set[i].revents & POLLIN) {
+                if (i) {
                     static char Buffer[1024];
                     int RecvSize = recv(Set[i].fd,
                             Buffer,
                             1024,
                             MSG_NOSIGNAL);
-                    if((RecvSize == 0) && (errno != EAGAIN)) {
+                    if ((RecvSize == 0) && (errno != EAGAIN)) {
                         shutdown(Set[i].fd, SHUT_RDWR);
                         close(Set[i].fd);
                         SlaveSockets.erase(Set[i].fd);

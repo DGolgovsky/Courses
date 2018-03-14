@@ -1,0 +1,15 @@
+struct pollfd Set[POLL_SIZE];
+
+Set[0].fd = MasterSocket;
+Set[0].events = POLLIN;
+
+// for ... -> all slaves
+
+poll(Set, SetSize, -1);
+    * -1 - timeout (infinite)
+
+for (...) {
+    if (Set[i].revents & POLLIN) {
+        ...
+    }
+}

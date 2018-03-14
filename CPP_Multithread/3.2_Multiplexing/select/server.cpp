@@ -1,12 +1,14 @@
 #include <iostream>
-#include <algorithm>
-#include <set>
 
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
 #include <fcntl.h>
+
+#include <algorithm>
+#include <set>
+
 
 int set_nonblock(int fd)
 {
@@ -21,7 +23,7 @@ int set_nonblock(int fd)
 #endif
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     int MasterSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     std::set<int> SlaveSockets;
@@ -36,26 +38,26 @@ int main(int argc, char *argv[])
 
     listen(MasterSocket, SOMAXCONN);
 
-    while(true) {
+    while (true) {
         fd_set Set;
         FD_ZERO(&Set);
         FD_SET(MasterSocket, &Set);
-        for(auto Iter = SlaveSockets.begin();
-                Iter != SlaveSockets.end();
-                Iter++) {
+        for (auto Iter = SlaveSockets.begin();
+             Iter != SlaveSockets.end();
+             ++Iter) {
             FD_SET(*Iter, &Set);
         }
 
         int Max = std::max(MasterSocket,
                 *std::max_element(SlaveSockets.begin(),
                 SlaveSockets.end()));
-
+        
         select(Max+1, &Set, NULL, NULL, NULL);
 
-        for(auto Iter = SlaveSockets.begin();
-                Iter != SlaveSockets.end();
-                Iter++) {
-            if(FD_ISSET(*Iter, &Set)) {
+        for (auto Iter = SlaveSockets.begin();
+             Iter != SlaveSockets.end();
+             ++Iter) {
+            if (FD_ISSET(*Iter, &Set)) {
                 static char Buffer[1024];
                 int RecvSize = recv(*Iter,
                         Buffer,
@@ -76,5 +78,7 @@ int main(int argc, char *argv[])
             SlaveSockets.insert(SlaveSocket);
         }
     }
+
     return 0;
 }
+

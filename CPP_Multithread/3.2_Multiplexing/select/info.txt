@@ -1,0 +1,24 @@
+[master]     [ sl.1 | sl.2 | sl.3 | ... | sl.n ]
+
+---BETTER_PERFORMANCE---
+fd_set Set; // 1024 bits
+FD_ZERO(&Set);
+FD_SET(MasterSocket, &Set);
+
+for (...) { FD_SET(*Iter, &Set); }
+int Max(...); // max descriptor
+select(Max+1, &Set, NULL, NULL, NULL);
+/* man select */
+
+for (...) { if (FD_ISSET(*Iter, &Set)) {}
+    if (FD_ISSET(MasterSocket, &Set)) {
+        accept(...)
+    }
+}
+
+*** TEST ECHO_SERVER MULTI CLIENTS***
+telnet 127.0.0.1 12345
+$ something
+...
+$ q
+

@@ -1,0 +1,15 @@
+KQueue >> FreeBSD, MacOS
+
+int KQueue = kqueue();
+
+struct kevent KEvent;
+bzero(&KEvent, sizeof(KEvent));
+EV_SET(&KEvent, MasterSocket, EVFILT_READ, EV_ADD, 0, 0, 0);
+kevent(KQueue, &KEvent, 1 {..10..}, NULL, 0, NULL);
+
+while (true) {
+    bzero(&kevent, sizeof(KEvent));
+    kevent(KQueue, NULL, 0, &KEvent, 1, NULL);
+    if (KEvent.filter == EVFILT_READ) { ... }
+}
+

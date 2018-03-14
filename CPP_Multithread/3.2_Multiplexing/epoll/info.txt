@@ -1,0 +1,19 @@
+epoll -> kernel_space object (KQueue *BSD)
+
+int EPoll = epoll_create1(0);
+
+struct epoll_event Event;
+Event.data.fd = MasterSocket;
+Event.events = EPOLLIN | EPOLLET;
+
+epoll_ctl(EPoll, EPOLL_CTL_ADD, MasterSocket, &Event);
+
+struct epoll_event Events[A];
+
+while (true) {
+    int N = epoll_wait(EPoll, Events, A, -1);
+    for (...; i < N ;...) {
+        if ((Events[i].events & EPOLLERR) || (Events[i].events & EPOLLHUP)) {
+        }
+    }
+}

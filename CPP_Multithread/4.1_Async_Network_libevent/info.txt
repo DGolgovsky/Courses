@@ -1,0 +1,132 @@
+Supported `libevent` multiplexing:
+    select
+    poll
+    epoll
+    kqueue
+    devport
+    evport
+    win32
+
+---
+struct event_base *event_base_new(void);
+
+config:
+struct event_config *event_config_new(void);
+struct event_base *event_base_new_with_config(const struct event_config *cfg);
+void event_config_free(struct event_config *cfg);
+
+void event_base_free(struct event_base *base);
+
+---event loop---
+int event_base_loop(struct event_base *base, int flags);
+
+// minimum 1 event registered
+flags:
+    EVLOOP_ONCE -> exit loop after first event
+    EVLOOP_NONBLOCK -> work if only event
+    EVLOOP_NO_EXIT_ON_EMPTY -> loop forever (used on multithreaded progs)
+
+int event_base_dispatch(struct event_base *base); // flags == 0
+
+int event_base_loopexit(*base, const struct timeval *tv);
+int event_base_loopbreak(*base);
+
+int event_base_got_exit(*base);
+int event_base_got_break(*base);
+
+--- event ---
+struct event *event_new(struct event_base *base,
+                        evutil_socket_t fd,
+                        short what,
+                        event_callback_fn cb,
+                        void *arg);
+
+what -> flags { EV_TIMEOUT, EV_READ, EV_WRITE, EV_SIGNAL, EV_PERSIST, EV_ET }
+
+cb -> typedef void (*event_callback_fn)(evutil_socket_t, short, void *);
+arg -> void *event_sell_cbarg();
+
+int event_add(struct event *ev, const struct timeval *tv);
+int event_del(struct event *ev);
+
+void event_free(struct event *ev);
+
+---buffer---
+**evbuffer**
+struct evbuffer *evbuffer_new();
+void evbuffer_free(*buf);
+
+evbuffer_add -> add at end of queue
+        _add_printf
+        _add_vprintf
+        _add_reference
+        _add_buffer
+        _add_buffer_reference
+        _add_file
+        _read
+        _readln
+
+evbuffer_prepend -> add at begin
+        _prepend_buffer
+
+evbuffer_get_length -> length of queue
+
+evbuffer_get_contiguous_space -> len of one piece
+
+evbuffer_pullup -> merge some pieces
+
+evbuffer_drain -> delete all
+        _remove
+        _remove_buffer -> rm after read
+
+evbuffer_copyout -> copy of piece
+        _copyout_from
+        _write
+        _write_atmost
+
+evbuffer_search
+        _search_range
+        _search_eol
+
+evbuffer_peek -> replace piece
+
+evbuffer_reserve_space
+        _commit_space
+
+**bufferevents**
+>> Socket_based bufferevents:
+struct bufferevent *bufferevent_socket_new(stuct event_base *base, evutil_socket_t fd, struct bufferevent_options options); -> creation
+
+void bufferevent_free(struct bufferevent *bev);
+
+int bufferevent_socket_connect(struct bufferevent *bev, struct sockaddr *address, int addrlen); -> connection
+
+BEV_EVENT_READING
+         _WRITING
+         _ERROR
+         _TIMEOUT
+         _EOF
+         _CONNECTED
+
+struct evbuffer *bufferevent_get_{input|output}(struct bufferevent *bev); -> writing/reading
+
+int bufferevent_write(*bev, const void *data, size_t size); -> write
+int bufferevent_read(*bev, void *data, size-t size); -> read
+
+int bufferevent_write_buffer(*bev, struct evbuffer *buf);
+int bufferevent_read_buffer(*bev, struct evbuffer *buf);
+
+int bufferevent_flush(*bev, short iotype, enum bufferevent_flush_mode state);
+
+int bufferevent_set_timeouts(*bev, const struct timeval *timeout_read, const struct timeval *timeout_write);
+
+--server sockets--
+struct evconnlistener *evconnlistener_new(struct event_base *base, evconnlistener_cb cb, void *ptr, unsigned flags, int backlock, evutil_socket_t fd);
+
+struct evconnlistener *evconnlistener_new_bind(struct event_base *base, evconnlistener_cb cb, void *ptr, unsigned int flags, int backlock, struct sockaddr *sa, int socklen);
+
+typedef void (*evlistener_cb)(struct evlistener *listener, evutil_socket_t sock, struct sockaddr *addr /* connected client */, int len, void *ptr);
+
+void evconnlistener_free(*listener);
+
+

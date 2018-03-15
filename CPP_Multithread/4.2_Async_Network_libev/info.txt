@@ -1,0 +1,72 @@
+struct ev_loop *ev_default_loop(unsigned int flags);
+ev_default_destroy();
+
+struct ev_loop *ev_loop_new(unsigned int flags);
+ev_loop_destroy(loop);
+
+int ev_is_default_loop(loop);
+
+unsigned int ev_loop_count(loop);
+
+ev_loop(loop, flags);
+ev_unloop(loop, how);
+
+flags:
+    EVLOOP_NONBLOCK
+    EVLOOP_ONESHOT
+
+*** ev_io --> watcher ***
+struct ev_loop *loop = ev_default_loop(0);
+struct ev_io stdin_watcher;
+ev_init(&stdin_watcher, my_callback);
+ev_io_set(&stdin_watcher, STDIN_FILENO, EV_READ);
+ev_io_start(loop, &stdin_watcher);
+
+ev_loop(loop, 0);
+
+mt_callback:
+    static void my_callback(*loop, *watcher, int revents /* == EV_READ*/) {
+        ev_io_stop(watcher);
+        ev_unloop(loop, EVUNLOOP_ALL);
+    }
+
+*** timers ***
+struct ev_timer t;
+ev_timer_init(&t, my_callback, 60., 0.); // 60 - delay, 0. -repeat {0 -> once}
+ev_timer_start(loop, &t);
+
+static void my_callback(*loop, *w, revents) {
+    // ...
+}
+
+--- ev_periodic ---
+// Based on absolute time. Analogue unix cron
+
+*** signals ***
+struct ev_signal w;
+ev_signal_init(&w, my_callback, SIGINT);
+ev_signal_start(loop, &w);
+
+static void *my_callback(*loop, *w, revents);
+
+--- childrens ---
+if (pid == fork()) {
+    ev_child w;
+    ev_child_init(&w, my_callback, pid, 0);
+    ev_child_start(...);
+}
+
+*** Statist ***
+ev_stat w;
+ev_stat_init(&w, my_callback, "/etc/passwd", 0);
+ev_stat_start(loop, &w);
+
+w -> attr.st_size
+     attr.st_mtime
+     attr.st_atime
+
+*** Idle (if nothing to do) ***
+ev_idle w;
+ev_idle_init(&w, my_callback);
+ev_idle_start(loop, &w);
+

@@ -1,0 +1,32 @@
+pid_t fork();
+
+*** Process attributes ***
+get_pid();  -> children
+get_ppid(); -> parent
+
+uid_t get_uid(); -> parent user
+gid_t get_gid(); -> parent group
+
+int nice(int decr); // decrement priority
+
+getrlimt
+setrlimit
+
+********************
+Если мы хотим запустить программу на исполнения, то мы должны породить процесс (через fork()) и "переключить" его на другой исполняемый файл с помощью функций семейства exec.
+
+int execl(const char *path, const char *arg0, ..., const char *argn, (char *)0);
+int execle(const char *path, const char *arg0, ..., const char *argn, (char *)0, char *const envp[]);
+int execlp(const char *file, const char *arg0, ..., const char *argn, (char *)0);
+int execlpe(const char *file, const char *arg0, ..., const char *argn, (char *)0, char *const envp[]);
+int execv(const char *path, char *const argv[]);
+int execve(const char *path, char *const argv[], char *const envp[]);
+int execvp(const char *file, char *const argv[]);
+int execvpe(const char *file, char *const argv[], char *const envp[]);
+
+Пройдемся по "буквам":
+(l - list) Это значит, что аргументы командной строки передаются в виде списка переменной длины (оканчивающегося NULL).
+(v - vector) Это значит, что аргументы командной строки передаются в виде указателя на массив строк (последний элемент массива - NULL).
+(p - path) Мы не указываем полный путь к имени файла. Файл ищется с учетом переменной окружения PATH и т.д.
+(e - environment) Мы передаем явно переменные окружения в виде массива строк "key=value".
+

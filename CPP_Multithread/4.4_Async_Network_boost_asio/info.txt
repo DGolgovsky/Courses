@@ -1,0 +1,48 @@
+*** Connection ***
+boost::asio::io_service io_service;
+boost::asio::ip::tcp::socket socket(io_service);
+
+---Synchronous---
+boost::system::error_code ec;
+socket.connect(server_endpoint, ec);
+
+---Async---
+socket.async_connect(server_endpoint, handler);
+io_service.run();
+
+void handler(const boost::system::error_code &ec) {
+    // ...
+}
+
+*** Bind ***
+std::bind / boost::bind
+
+double my_divide(double x, double y) {
+    return x / y;
+}
+
+using namespace std::placeholders;
+
+auto fn_five = std::bind(my_divide, 10, 2);
+auto fn_half = std::bind(my_divide, _1, 2); // fn_half(x) -> x/2
+auto fn_invert = std::bind(my_divide, _2, _1); // fn_invert(y, x) -> y/x
+
+auto fn_round = std::bind<int>(my_divide, _1, _2); // -> int my_divide(x,y)
+
+*** Accept  TCP/UDP ***
+boost::ip::tcp::acceptor acceptor(io_service, endpoint);
+boost::ip::tcp::socket socket(io_service);
+acceptor.accept(socket);
+
+boost::ip::udp::endpoint endpoint(boost::ip::udp::v4(), // 0.0.0.0
+                                  12345);
+boost::ip::udp::socket socket(io_service, endpoint);
+
+*** Transfer ***
+--- Synchronous ---
+socket.send
+socket.receive
+--- Async ---
+socket.async_send
+socket.async_receive
+

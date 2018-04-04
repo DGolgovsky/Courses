@@ -1,0 +1,137 @@
+*** Types ***
+--Errors--
+SIGFPE   (floating point exception)
+SIGPIPE  (MSG_NOSIGNAL)
+SIGSEGV  (segmentation fault)
+SIGXCPU  (setter/getter limits)
+
+--Generated--
+SIGABRT  (`abort` system call)
+SIGHUP   (connection lost)
+SIGKILL  (-9 hard kill process)
+SIGTERM  (soft end process)
+SIGINT   (interrupt ctrl+c)
+SIGUSR1
+SIGUSR2
+
+--Task Management--
+SIGCHILD (end of subprocess / end of zombie)
+
+--Time Management--
+SIFALRM   (alarm(seconds);)
+SIGVTALMR (virtual timer)
+SIGPROF   (profiler timer)
+
+
+***Catch Signals***
+---ANSI---
+#include <signal.h>
+
+void handler(int signum) { //act
+    SIG_DFL -> default
+    SIG_IGN -> ignoring
+}
+
+void (*signal(int signum,
+              void (*act)(int)))(int);
+
+--POSIX--
+sigset_t:
+sigemptyset(0) // fill zeroes
+sigfillset (1)
+sigaddset  (+)
+sigdelset  (-)
+sigismember(?)
+
+sigprocmask(int how,
+    const sigset_t *set,
+    sigset_t *old_set);
+
+how:
+    SIG_BLOCK (unite masks)
+    SIG_UNBLOCK (unite with ~mask)
+    SIG_SETMASK (=)
+
+handler:
+int sigaction(int signum,
+    const struct sigaction *act,
+    struct sigaction *old_act);
+
+struct sigaction
+{
+    void (*sa_handler)(int);
+    void (*sa_sigaction)(int, siginfo_t *, void *);
+    sigset_t sa_mask;
+    itn sa_flags;
+};
+
+flags:
+    SA_NODEFER
+    SA_RESETHAND
+    SA_RESTART
+    SA_SIGINFO
+
+*** Real-time signals***
+vodi rts_handler(int signum, siginfo_t *info, void *context);
+
+typedef struct {
+    int si_signo; // signal number
+    int si_errno;
+    int si_code;  // signal code
+        /*
+            SI_USER  - kill, raise
+            SI_QUEUE - sigqueue
+            SI_TIMER - timer_settime
+            SI_ASYNCIO
+            SI_MESGQ
+        */
+#if (si_code > 0) // process (user) signals
+    pid_t si_pid;
+    uid_t si_uid;
+#else if (si_code < 0) // kernel signals
+    /*
+        SIGFPE
+           FPE_INTDIV
+           FPE_INTOVF
+           FPE_FLTDIV
+    */
+#endif
+    union sigval si_value;
+};
+
+si_value:
+union signal {
+    int sival_int;
+    void *sival_ptr;
+}
+
+@@@
+SIGRTMIN // more priority
+SIGRTMAX // less priority
+    RTSIG_MAX -> constant value of signals
+
+@@@
+
+*** Timeout ***
+sleep(s); // nanosleep, usleep
+
+int pause(); // unlimit pause, until recv another signal
+
+int sigwait(const sigset_t *set,
+            int *signum); // catch only *set signals
+int sigwaitinfo(const sigset_t *set,
+                siginfo_t *info); // real-time signals
+
+*** Zombies ***
+main_proc: pid:123
+   \       ppid: 122
+    ch_proc: pid:124
+             ppid: 123
+ch_proc will be zombie if end with exit_code != 0
+
+waitpid(pid_t pid, /* == -1 any */
+        int *statusp,
+        int options); /* WNOHANG */
+wait(&status); // old analogue == waitpid(-1, &status, 0);
+
+

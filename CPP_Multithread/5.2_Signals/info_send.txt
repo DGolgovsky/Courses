@@ -1,0 +1,16 @@
+*** Send signals ***
+kill(pid_t pid, int signum); -> send signal
+pid >  0, process pid
+pid < -1, group of process
+pid == 0, current process
+pid = -1, to all
+
+// Synchronous
+raise(int signum); // send yourself
+abort(); // SIGABRT guarantee kill process
+
+// Real-time
+sigqueue(pid_t pid, int signum,
+         const union sigval value);
+
+

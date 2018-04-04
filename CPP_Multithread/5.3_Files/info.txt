@@ -1,0 +1,34 @@
+LOCK_EX -> exclusive lock constant on write
+LOCK_SH -> shared lock on read
+
+EX & SH - mutual lock each other
+
+flock(fd, LOCK_SH);
+
+LOCK_UN -> unlock
+LOCK_NB -> nonblock lock
+
+*** File locks ***
+if (lock("filename")) {
+    // do_smthng
+    unlock("filename");
+} else {
+    // if not block
+}
+
+bool lock(const char *filename)
+{
+    int fd;
+    if ((fd = open(filename, O_WRONLY|O_CREAT|O_EXCL, 0)) == -1)
+        return false;
+    close(fd);
+    return true;
+}
+
+bool unlock(const char *filename)
+{
+    unlink(filename);
+    return true;
+}
+
+

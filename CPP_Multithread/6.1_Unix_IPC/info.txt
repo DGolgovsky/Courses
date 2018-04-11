@@ -1,0 +1,10 @@
+Standard: SysV IPC (sys five)
+          POSIX IPC
+
+** SysV **
+int id = ftok(const char *pathname,
+          int proj_id);
+
+ls ==> ipcs
+rm ==> ipcrm
+

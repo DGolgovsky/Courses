@@ -1,0 +1,112 @@
+Manual message: -->[len|msg]-->
+
+Message queue:
+    SysV
+    POSIX
+
+*** SysV ***
+-- CREATE --
+key_t key = ftok(...); // or IPC_PRIVATE
+msgid = msgget(key_t key, int flags);
+
+flags [9 bits] IPC_CREAT
+    rwx - owner
+    rwx - creator
+    rwx - other
+
+-- RM/STAT/SET --
+msgctl(int msgq,
+       int cmd,
+       struct msgid_ds *data);
+
+delete:    cmd == IPC_RMID
+statistic: cmd == IPC_STAT
+set_args:  cmd == IPC_SET
+
+struct msgid_ds
+{
+    struct ipc_perm
+    {
+        uid_t uid;
+        gid_t gid;
+        uid_t cuid; // creator
+        gid_t cgid;
+        mode_t mode;
+    } msg_perm; // permissions
+    msgqnum_t msg_qnum; // count messages
+    msglen_t msg_qbytes; // max len of queue
+    pid_t msg_lspid; // PID last sender
+    pid_t msg_lrpid; // PID last receiver
+    time_t msg_stime; // time of send
+    time_t msg_rtime; // time of recv
+    time_t msg_ctime; // time of msgctl
+};
+
+-- SEND/RECV --
+struct msg
+{
+    long mtype;
+    char mtext[256]; // example
+};
+
+int msgsnd(int msgq,
+           const void *msgp,
+           size_t msgsize, /* == sizeof (mtext) only! */
+           int flags);
+
+int msgrcv(int msgq,
+           void *msgp,
+           size_t mtextsize,
+           long msgtype,
+           int flags);
+
+flags: MSG_NOERROR (prevent oversize message)
+       IPC_NOWAIT (nonblock)
+
+msgtype > 0 : => this type
+        = 0 : => ignore type
+        < 0 : => message with min type
+
+*** POSIX ***
+mqd_t mqd_open = mq_open(const char *name,
+        int flags);
+flags: O_RDONLY
+       O_WRONLY
+       O_RDWR
+       O_NONBLOCK
+
+mqd_t mqd_create = mq_open(const char *name,
+        int flags,
+        mode_t perms,
+        struct mq_attr *attr);
+
+flags: O_CREAT
+       O_EXCL
+
+struct mq_attr
+{
+    long mq_flags;
+    long mq_maxmsg; // max message count /length
+    long mq_msgsize; // max size one msg
+    long mq_curmsgs; // cuurent count of msgs
+};
+
+int mq_getattr(mqd, *attr);
+int mw_setattr(mqd, *attr, *addattr);
+
+int mq_close(mqd_t mqd);
+
+int mq_send(int mqd,
+            const char *msg,
+            size_t msgsize,
+            unsigned int priority); // [0..31]
+int mq_timedsend(..., const struct timespec *tmout);
+
+int mq_receive(int mqd,
+               char *msg,
+               size_t msgsize,
+               unsigned int *priorityp); // NULL
+int mq_timedreceive(...,timespec..);
+
+int mq_notify(int mqd, const struct sigevent *ep);
+

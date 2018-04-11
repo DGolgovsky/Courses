@@ -1,0 +1,43 @@
+*** Named channel (FIFO) ***
+int mkfifo(const char *path,
+           mode_t perms); // 0666
+
+*** Unnamed channel (PIPE) ***
+UNIX examples:
+who | sort | uniq | wc
+stdout -> stdin
+>who>    >sort>   >uniq>   >wc
+    |____|    |___|    |___|
+
+stdin  - 0
+stdout - 1
+stderr - 2
+
+PIPE_BUF == ~512 byte
+int pipe(int fd[2]);
+
+int dup(int old_fd);
+int dup2(int old_fd, int new_fd);
+int dup3(int old_fd, int new_fd, int flags);
+                                 O_CLOEXEC
+
+*** New progr **
+exec
+system
+pipe+dup2
+
+FILE *popen(const char *command,
+            const char *type); // "r", "rw"
+int pclose(FILE *stream);
+
+*** Dual-linked pipe  ***
+    ____
+-->|    |-->
+<--|____|<--
+
+int socketpair(int domain, /* AF_UNIX */
+               int type,
+               int protocol,
+               int sv[2]);
+
+

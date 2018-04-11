@@ -1,0 +1,170 @@
+execve("./who_wc", ["./who_wc"], 0x7ffd188c1a58 /* 45 vars */) = 0
+brk(NULL)                               = 0x55f3f4043000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=298481, ...}) = 0
+mmap(NULL, 298481, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f069b0a7000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\20\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2065784, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f069b0a5000
+mmap(NULL, 3893488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f069ab15000
+mprotect(0x7f069acc3000, 2093056, PROT_NONE) = 0
+mmap(0x7f069aec2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0x7f069aec2000
+mmap(0x7f069aec8000, 14576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f069aec8000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f069b0a64c0) = 0
+mprotect(0x7f069aec2000, 16384, PROT_READ) = 0
+mprotect(0x55f3f3ecc000, 4096, PROT_READ) = 0
+mprotect(0x7f069b0f0000, 4096, PROT_READ) = 0
+munmap(0x7f069b0a7000, 298481)          = 0
+pipe([3, 4])                            = 0
+clone(strace: Process 7527 attached
+ <unfinished ...>
+[pid  7527] close(1)                    = 0
+[pid  7526] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f069b0a6790) = 7527
+[pid  7527] dup2(4, 1 <unfinished ...>
+[pid  7526] close(0 <unfinished ...>
+[pid  7527] <... dup2 resumed> )        = 1
+[pid  7526] <... close resumed> )       = 0
+[pid  7527] close(4 <unfinished ...>
+[pid  7526] dup2(3, 0 <unfinished ...>
+[pid  7527] <... close resumed> )       = 0
+[pid  7526] <... dup2 resumed> )        = 0
+[pid  7527] close(3 <unfinished ...>
+[pid  7526] close(4 <unfinished ...>
+[pid  7527] <... close resumed> )       = 0
+[pid  7526] <... close resumed> )       = 0
+[pid  7526] close(3 <unfinished ...>
+[pid  7527] execve("/usr/local/bin/who", ["who"], 0x7fffa82c3408 /* 45 vars */ <unfinished ...>
+[pid  7526] <... close resumed> )       = 0
+[pid  7526] execve("/usr/local/bin/wc", ["wc", "-l"], 0x7fffa82c3408 /* 45 vars */ <unfinished ...>
+[pid  7527] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid  7526] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid  7527] execve("/usr/local/sbin/who", ["who"], 0x7fffa82c3408 /* 45 vars */ <unfinished ...>
+[pid  7526] execve("/usr/local/sbin/wc", ["wc", "-l"], 0x7fffa82c3408 /* 45 vars */ <unfinished ...>
+[pid  7527] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid  7526] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid  7527] execve("/usr/bin/who", ["who"], 0x7fffa82c3408 /* 45 vars */ <unfinished ...>
+[pid  7526] execve("/usr/bin/wc", ["wc", "-l"], 0x7fffa82c3408 /* 45 vars */) = 0
+[pid  7527] <... execve resumed> )      = 0
+[pid  7527] brk(NULL)                   = 0x562252a0a000
+[pid  7527] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid  7527] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid  7527] fstat(3, {st_mode=S_IFREG|0644, st_size=298481, ...}) = 0
+[pid  7526] brk(NULL <unfinished ...>
+[pid  7527] mmap(NULL, 298481, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6f00240000
+[pid  7527] close(3)                    = 0
+[pid  7527] openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[pid  7527] read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\20\2\0\0\0\0\0"..., 832) = 832
+[pid  7527] fstat(3, {st_mode=S_IFREG|0755, st_size=2065784, ...}) = 0
+[pid  7527] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f0023e000
+[pid  7527] mmap(NULL, 3893488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6effcae000
+[pid  7527] mprotect(0x7f6effe5c000, 2093056, PROT_NONE) = 0
+[pid  7527] mmap(0x7f6f0005b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0x7f6f0005b000
+[pid  7527] mmap(0x7f6f00061000, 14576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6f00061000
+[pid  7527] close(3)                    = 0
+[pid  7527] arch_prctl(ARCH_SET_FS, 0x7f6f0023f500) = 0
+[pid  7527] mprotect(0x7f6f0005b000, 16384, PROT_READ) = 0
+[pid  7527] mprotect(0x562251f2f000, 4096, PROT_READ) = 0
+[pid  7527] mprotect(0x7f6f00289000, 4096, PROT_READ) = 0
+[pid  7527] munmap(0x7f6f00240000, 298481) = 0
+[pid  7527] brk(NULL)                   = 0x562252a0a000
+[pid  7527] brk(0x562252a2b000)         = 0x562252a2b000
+[pid  7527] open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+[pid  7527] fstat(3, {st_mode=S_IFREG|0644, st_size=2929952, ...}) = 0
+[pid  7527] mmap(NULL, 2929952, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6eff9e2000
+[pid  7527] close(3)                    = 0
+[pid  7527] access("/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory)
+[pid  7527] open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 3
+[pid  7527] lseek(3, 0, SEEK_SET)       = 0
+[pid  7527] alarm(0)                    = 0
+[pid  7526] <... brk resumed> )         = 0x5568325c2000
+[pid  7527] rt_sigaction(SIGALRM, {sa_handler=0x7f6effddcdb0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+[pid  7527] alarm(10)                   = 0
+[pid  7527] fcntl(3, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+[pid  7527] read(3, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+[pid  7527] fcntl(3, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+[pid  7527] alarm(0)                    = 10
+[pid  7527] rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, NULL, 8) = 0
+[pid  7527] alarm(0)                    = 0
+[pid  7527] rt_sigaction(SIGALRM, {sa_handler=0x7f6effddcdb0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, 8) = 0
+[pid  7527] alarm(10)                   = 0
+[pid  7527] fcntl(3, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+[pid  7527] read(3, "\7\0\0\0{\4\0\0:1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+[pid  7527] fcntl(3, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+[pid  7527] alarm(0)                    = 10
+[pid  7527] rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, NULL, 8) = 0
+[pid  7527] kill(1147, SIG_0)           = 0
+[pid  7527] alarm(0)                    = 0
+[pid  7527] rt_sigaction(SIGALRM, {sa_handler=0x7f6effddcdb0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, 8) = 0
+[pid  7527] alarm(10)                   = 0
+[pid  7527] fcntl(3, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+[pid  7527] read(3, "", 384)            = 0
+[pid  7527] fcntl(3, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+[pid  7527] alarm(0)                    = 10
+[pid  7527] rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6effce28e0}, NULL, 8) = 0
+[pid  7527] close(3)                    = 0
+[pid  7527] stat("/dev/:1", 0x7ffeee59fba0) = -1 ENOENT (No such file or directory)
+[pid  7526] access("/etc/ld.so.preload", R_OK <unfinished ...>
+[pid  7527] open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+[pid  7527] fstat(3, {st_mode=S_IFREG|0644, st_size=1167, ...}) = 0
+[pid  7527] fstat(3, {st_mode=S_IFREG|0644, st_size=1167, ...}) = 0
+[pid  7527] read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\10\0\0\0\0"..., 4096) = 1167
+[pid  7527] lseek(3, -718, SEEK_CUR)    = 449
+[pid  7527] read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\10\0\0\0\0"..., 4096) = 718
+[pid  7527] close(3)                    = 0
+[pid  7527] fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+[pid  7527] write(1, "dmitry   :1           2018-04-04"..., 44) = 44
+[pid  7527] close(1)                    = 0
+[pid  7527] close(2)                    = 0
+[pid  7527] exit_group(0)               = ?
+[pid  7527] +++ exited with 0 +++
+<... access resumed> )                  = -1 ENOENT (No such file or directory)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7527, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=298481, ...}) = 0
+mmap(NULL, 298481, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe13aa38000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\20\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2065784, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe13aa36000
+mmap(NULL, 3893488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe13a4a6000
+mprotect(0x7fe13a654000, 2093056, PROT_NONE) = 0
+mmap(0x7fe13a853000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0x7fe13a853000
+mmap(0x7fe13a859000, 14576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe13a859000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7fe13aa37500) = 0
+mprotect(0x7fe13a853000, 16384, PROT_READ) = 0
+mprotect(0x5568311b1000, 4096, PROT_READ) = 0
+mprotect(0x7fe13aa81000, 4096, PROT_READ) = 0
+munmap(0x7fe13aa38000, 298481)          = 0
+brk(NULL)                               = 0x5568325c2000
+brk(0x5568325e3000)                     = 0x5568325e3000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2929952, ...}) = 0
+mmap(NULL, 2929952, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe13a1da000
+close(3)                                = 0
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2997, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2997
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+fadvise64(0, 0, 0, POSIX_FADV_SEQUENTIAL) = -1 ESPIPE (Illegal seek)
+read(0, "dmitry   :1           2018-04-04"..., 16384) = 44
+read(0, "", 16384)                      = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+write(1, "1\n", 2)                      = 2
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -1,0 +1,76 @@
+** SysV **
+int semid = semget(key_t key,
+       int nsems, /* Num of sems */
+       int flags);
+
+int semctl(int semid,
+           int semnum,
+           int cmd,
+           union semun arg);
+
+union semun
+{
+    int val;
+    struct semid_ds *buf;
+    unsigned short *array;
+};
+
+struct semid_ds
+{
+    struct ipc_perm sem_perm;
+    unsigned int sem_nsems;
+    time_t sem_otime, sem_ctime;
+};
+
+cmd:
+    IPC_RMID
+    IPC_STAT
+    IPC_SET
+    GETNCNT <-> num of processes wait'n sem
+    GETZCNT <-> proc wait'n 0
+    GETPID  <-> pid
+    GETVAL  <-> get value of sem
+    SETVAL  <-> set value to sem
+    GETALL
+    SETALL
+
+int semop(int semid,
+          struct sembuf *sops,
+          size_t nsops);
+
+struct sembuf
+{
+    unsigned short sem_num;
+    short sem_op;
+    short sem_flag;
+};
+
+sem_flag:
+    IPC_NOWAIT
+    IPC_UNDO
+
+** POSIX **
+-- Named --
+sem_t *sem_open(const char *name,
+                int flags);
+sem_t *sem_open(const char *name,
+                int flags, /* == O_CREAT */
+                mode_t perms,
+                unsigned int value);
+
+int sem_close(sem_t *sem);
+int sem_unlink(const char *name);
+
+sem_post - increment
+sem_wait - decrement
+sem_trywait
+sem_timedwait(id, const struct timespec);
+
+int sem_getvalue(sem_t *restrict_sem,
+                 int *value);
+-- Unnamed --
+sem_t s;
+int sem_init(sem_t *sem, int pshared,
+             unsigned int value);
+int sem_destroy(sem_t *sem);
+

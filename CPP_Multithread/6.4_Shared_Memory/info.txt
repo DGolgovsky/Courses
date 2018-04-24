@@ -1,0 +1,64 @@
+** SysV **
+int shmget(key_t key,
+           size_t size,
+           int flags);
+flags:
+    IPC_CREAT
+    IPC_PRIVATE (may used w/o key)
+
+int shmctl(int shmid,
+           int cmd,
+           struct shmid_ds *data);
+
+cmd:
+    IPC_RMID
+    IPC_STAT
+    IPC_SET
+
+struct shmid_ds
+{
+    struct   ipc_perm shm_perm; /* Ownership and permissions */
+    size_t   shm_segsz;         /* Size of segment (bytes) */
+    time_t   shm_atime;         /* Last attach time */
+    time_t   shm_dtime;         /* Last detach time */
+    time_t   shm_ctime;         /* Last change time */
+    pid_t    shm_cpid;          /* PID of creator */
+    pid_t    shm_lpid;          /* PID of last shmat(2)/shmdt(2) */
+    shmatt_t shm_nattch;        /* No. of current attaches */
+};
+
+void *shmat(int shmid,
+            const void *shmaddr,
+            int flags);
+
+flags:
+    SHM_RDONLY
+    SHM_RND
+
+int shmdt(const void *shmaddr); /* detach */
+
+** POSIX **
+int shm_open(const char *name,
+         int flags,
+         mode_t perms);
+
+int shm_unlink(const char *name);
+
+Create/open shared memory
+1. shm_open
+2. ftruncate
+3. mmap
+~
+4. munmap
+5. shm_delete
+
+void *mmap(void *addr, // wished address
+           size_t len, // segment size
+           int prot,   // Segment guard (permissions) PROT_NONE, PROT_READ, PROT_WRITE, PROT_EXEC
+           int flags,  // Flags: MAP_SHARED, MAP_PRIVATE
+           int fd,     // Descriptor
+           off_t off); // Offset
+
+void munmap(void *addr,
+            size_t len);
+

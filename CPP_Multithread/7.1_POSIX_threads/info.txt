@@ -1,0 +1,60 @@
+pthread_create(pthread_t *thread_id,
+               const pthread_attr_t *attr,
+               void *(*start_fcn)(void *),
+               void *arg);
+
+void *thread_func(void *value)
+{
+    int *int_value = (int *)value;
+    (*int_value)++;
+    return value;
+}
+
+** joinable threads **
+// Wait and receive ret value of thread
+int pthread_join(pthread_t thread,
+                 void **retval); -> EDEADLK
+
+** detached threads **
+// lost ret value of thread
+int pthread_detach(pthread_t thread);
+
+
+pthread_attr_t *attr;
+pthread_attr_init_destroy;
+
+int pthread_setdetachstate(pthread_attr_t *attr,
+            int detachstate);
+
+detachstate:
+    PTHREAD_CREATE_JOINABLE
+    PTHREAD_CREATE_DETACHED
+
+void *thread_func(void *arg)
+{
+    // ...
+    return ret_value; // Implicit termination
+}
+
+// Terminate from new thread
+void pthread_exit(void *retval); // Explicit termination
+
+// Terminate from main thread
+// only with syscalls:
+//      read, waitpid, ... 65 ...
+int pthread_cancel(pthread_t pthread);
+
+int pthread_setcancelstate(int state,
+            int *oldstate);
+state:
+    PTHREAD_CANCEL_ENABLED
+    PTHREAD_CANCEL_DISABLED
+
+int pthread_setcanceltype(int type, int *oldtype);
+type:
+    PTHREAD_CANCEL_DEFERED
+    PTHREAD_CANCEL_ASYNCHRONOUS
+
+void pthread_cleanup_push(...);
+void pthread_cleanup_pop (...);
+

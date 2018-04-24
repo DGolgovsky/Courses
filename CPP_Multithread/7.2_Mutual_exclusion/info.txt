@@ -1,0 +1,41 @@
+pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
+
+int pthread_mutex_init(*mp, *mattrp);
+int pthread_mutex_destroy(*mp);
+
+int pthread_mutex_lock(*mp);    // wait unlock
+int pthread_mutex_trylock(*mp); // continue
+
+int pthread_mutex_unlock(*mp);
+
+// NON-Sleep mutex
+pthread_spinlock_t lock;
+
+pthread_spin_init(*lock, int pshared);
+
+pshared:
+    PTHREAD_PROCESS_SHARED
+    PTHREAD_PROCESS_PRIVATE
+
+pthread_spin_destroy(*lock);
+
+pthread_spin_lock(*lock); // wait
+pthread_spin_trylock(*lock); // continue
+
+pthread_spin_unlock(*lock);
+
+// RW-Lock mutex
+pthread_rwlock_t rwlock = PTHREAD_RWLOCK_INITIALIZER;
+
+    ...+init, destroy
+
+// shared - readlock
+int pthread_rwlock_rdlock(*rwlock);
+int thread_rwlock_tryrdlock(*rwlock);
+
+// exclusive - writelock
+int pthread_rwlock_wrlock(*rwlock);
+int pthread_rwlock_trywrlock(*rwlock);
+
+int pthread_rwlock_unlock(*rwlock);
+

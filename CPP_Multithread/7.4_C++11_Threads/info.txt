@@ -1,0 +1,89 @@
+*** C++11 threads ***
+void thread_func(int &I, double D, std::string S)
+{ ... }
+
+int i = 16;
+std::thread t(thread_func, std::ref(i), 3.14, "Hello");
+
+t.join();
+//
+t.detach();
+
+class MyFunctor
+{
+    // ...
+public:
+    void operator()() {
+        ...
+    }
+    // ...
+};
+
+MyFunctor functor;
+std::thread t_fun(functor);
+
+std::thread t_lambda([](){...});
+
+*** C++11 Mutex ***
+std::mutex m;
+
+m.lock();
+    m.trylock(); // NON_Block
+//
+m.unlock();
+
+std::mutex m_uniq;
+{
+    std::unique_lock<std::mutex> l(m_uniq); // lock
+    ...
+} // unlock
+
+***
+class Container
+{
+private:
+    std::list<int> l;
+    std::mutex m;
+    // std::recursive_mutex m;
+    // std::timed_mutex
+    // std::recursive_timed_mutex
+public:
+    void add(int el) {
+        m.lock();
+        l.push_back(el);
+        m.unlock;
+    }
+
+    void add_many(int num, ...) {
+        va_list a;
+        va_start(a, num);
+        m.lock();
+        for (...)
+            add(va_arg(a, int));
+        m.unlock();
+        va_end(a);
+    }
+};
+***
+
+*** C++11 Condition variables ***
+std::conditional_variable v;
+std::mutex m;
+
+v.wait(m);
+//
+v.wait_for(m);
+//
+v.wait_until(m);
+
+notify_one
+notify_all
+
+*** C++11 Asynchronous ***
+bool F(int x) { ... }
+
+std::future<bool> fut = std::async(F, 16);
+//...
+bool ret_val = fut.get();
+
+??? std::atomic ???

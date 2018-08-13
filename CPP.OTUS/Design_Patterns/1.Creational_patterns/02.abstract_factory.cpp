@@ -1,4 +1,4 @@
-// Абстрактная фабрика (Abstract factory)
+// Abstract factory
 
 #include <iostream>
 
@@ -8,59 +8,56 @@ enum class Env
 };
 
 // Config
-
 class IConfig
 {
 public:
     virtual void read() = 0;
 };
 
-class ConsulConfig : public IConfig
+class ConsulConfig: public IConfig
 {
 public:
     void read() override
     {
-        std::cout << "connect to consul" << std::endl;
+        std::cout << "Connect to Consul (cloud)" << std::endl;
     }
 };
 
-class LocalConfig : public IConfig
+class LocalConfig: public IConfig
 {
 public:
     void read() override
     {
-        std::cout << "open local file" << std::endl;
+        std::cout << "Open local file" << std::endl;
     }
 };
 
 // Metric
-
 class IMetric
 {
 public:
     virtual void send() = 0;
 };
 
-class PrometheusMetric : public IMetric
+class PrometheusMetric: public IMetric
 {
 public:
     void send() override
     {
-        std::cout << "push to prometheus" << std::endl;
+        std::cout << "Push to Prometheus (cloud)" << std::endl;
     }
 };
 
-class LocalMetric : public IMetric
+class LocalMetric: public IMetric
 {
 public:
     void send() override
     {
-        std::cout << "write to log" << std::endl;
+        std::cout << "Write to local log" << std::endl;
     }
 };
 
 //
-
 class EnvironmentFactory
 {
 public:
@@ -68,28 +65,26 @@ public:
     virtual IMetric* CreateMetric() = 0;
 };
 
-class CloudFactory : public EnvironmentFactory
+class CloudFactory: public EnvironmentFactory
 {
 public:
     IConfig* CreateConfig() override
     {
         return new ConsulConfig();
     }
-
     IMetric* CreateMetric() override
     {
         return new PrometheusMetric();
     }
 };
 
-class LocalFactory : public EnvironmentFactory
+class LocalFactory: public EnvironmentFactory
 {
 public:
     IConfig* CreateConfig() override
     {
         return new LocalConfig();
     }
-
     IMetric* CreateMetric() override
     {
         return new LocalMetric();
@@ -101,21 +96,16 @@ int main(int, char *[])
     auto environment = Env::cloud;
 
     EnvironmentFactory* factory;
-    switch (environment)
-    {
-    case Env::cloud:
-        factory = new CloudFactory();
-        break;
-
-    case Env::local:
-        factory = new LocalFactory();
-        break;
-
-    default:
-        return 1;
+    switch (environment) {
+        case Env::cloud:
+            factory = new CloudFactory();
+            break;
+        case Env::local:
+            factory = new LocalFactory();
+            break;
+        default:
+            return 1;
     }
-
-    //
 
     auto config = factory->CreateConfig();
     auto metric = factory->CreateMetric();
@@ -124,4 +114,4 @@ int main(int, char *[])
     metric->send();
 
     return 0;
-};
+}

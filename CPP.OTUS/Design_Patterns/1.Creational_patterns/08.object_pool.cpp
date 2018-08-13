@@ -7,8 +7,7 @@
 #include <array>
 
 class PgConnection
-{
-};
+{};
 
 
 class PgConnectionPool
@@ -25,10 +24,8 @@ private:
 public:
     PgConnection* get()
     {
-        for (size_t i = 0; i < m_pool.size(); ++i)
-        {
-            if (!m_pool[i].busy)
-            {
+        for (size_t i = 0; i < m_pool.size(); ++i) {
+            if (!m_pool[i].busy) {
                 m_pool[i].busy = true;
                 return m_pool[i].connection;
             }
@@ -42,10 +39,8 @@ public:
 
     void put(PgConnection* object)
     {
-        for (size_t i = 0; i < m_pool.size(); ++i)
-        {
-            if (m_pool[i].connection == object)
-            {
+        for (size_t i = 0; i < m_pool.size(); ++i) {
+            if (m_pool[i].connection == object) {
                 m_pool[i].busy = false;
                 break;
             }
@@ -54,8 +49,7 @@ public:
 
     ~PgConnectionPool()
     {
-        for (const auto &i : m_pool)
-        {
+        for (const auto &i : m_pool) {
             std::cout << i.connection << std::endl;
             delete i.connection;
         }
@@ -63,7 +57,7 @@ public:
 };
 
 
-int main(int, char const **)
+int main(int, char **)
 {
     PgConnectionPool pool;
 
@@ -71,6 +65,8 @@ int main(int, char const **)
     pool.put(report_conn);
 
     auto admin_conn = pool.get();
+    auto user_conn = pool.get();
+    pool.put(user_conn);
     pool.put(admin_conn);
 
     return 0;

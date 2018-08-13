@@ -14,12 +14,13 @@ public:
 
 class Report
 {
+private:
     IStorage* storage;
 
 public:
-    Report(IStorage* storage_) : storage(storage_)
-    {
-    }
+    Report(IStorage* storage_)
+        : storage(storage_)
+    { }
 
     void print()
     {

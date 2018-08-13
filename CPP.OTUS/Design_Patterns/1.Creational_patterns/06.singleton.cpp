@@ -12,7 +12,7 @@ public:
     }
     void info(const std::string &message)
     {
-        std::cerr << "   info: " << message << std::endl;
+        std::cerr << "info: " << message << std::endl;
     }
     void warn(const std::string &message)
     {
@@ -24,7 +24,7 @@ private:
     Logger& operator=(const Logger&) = delete;
 };
 
-int main(int, char const **)
+int main(int, char **)
 {
     Logger::Instance().info("started");
     Logger::Instance().warn("program is empty");

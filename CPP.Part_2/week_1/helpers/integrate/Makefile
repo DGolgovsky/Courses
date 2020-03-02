@@ -4,7 +4,6 @@ STD=-std=c++17
 ERR=-Wall -Wextra -pedantic
 CFLAGS=-I.
 
-#SFML Example
 LIBS=-pthread
 OBJS=integrate.o
 EXE=integrate.bin

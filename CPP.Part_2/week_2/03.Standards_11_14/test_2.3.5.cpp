@@ -1,12 +1,11 @@
 /*
-Напишите constexpr бинарные операторы +, - и * (скалярное произведение) для структуры Point.
-
-Пример использования:
-
-
-constexpr size_t size = static_cast<size_t>(Point(2,4) * Point(4,3));
-int m[size]; // массив из 20 элементов
+ * Напишите constexpr бинарные операторы +, - и * (скалярное произведение) для структуры Point.
+ *
+ * Пример использования:
+ * constexpr size_t size = static_cast<size_t>(Point(2,4) * Point(4,3));
+ * int m[size]; // массив из 20 элементов
 */
+
 // определение структуры Point уже подключено
 /* struct Point
 {

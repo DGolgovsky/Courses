@@ -8,6 +8,7 @@ struct String
     }
 
     String (String &&s) {
+    	// can be called default ctor
         swap(s);
     }
 
@@ -17,6 +18,7 @@ struct String
         return *this;
     }
 private:
+	// must be initialized by default values
     char *data_ = nullptr;
     std::size_t size_ = 0;
 };
